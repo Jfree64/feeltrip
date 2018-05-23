@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import logo from './logo.svg';
+import {BrowserRouter} from 'react-router-dom'
 import './App.css';
 import './index.css';
-import {navbar} from './navbar.jsx';
+import NavBar from './NavBar.jsx';
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <navbar />
+        <NavBar />
           <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to feeltrip</h1>
@@ -23,5 +24,9 @@ class App extends Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render((
+<BrowserRouter>
+  <App />
+</BrowserRouter>
+), document.getElementById('root'));
 registerServiceWorker();
