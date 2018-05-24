@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "deep-extend": "^0.6.0",
     "nvm": "0.0.4",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
