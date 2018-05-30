@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.0",
     "deep-extend": "^0.6.0",
     "nvm": "0.0.4",
     "react": "^16.3.2",

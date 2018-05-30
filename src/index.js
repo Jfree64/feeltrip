@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import { Route, Link, MemoryRouter } from 'react-router-dom'
+import { Route, Link, BrowserRouter, Switch } from 'react-router-dom'
 import logo from './logo.svg';
-import {BrowserRouter} from 'react-router-dom'
-import Home from './pages/home.jsx';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import LiveMap from './pages/LiveMap.jsx';
+import Blog from './pages/Blog.jsx';
+import Donate from './pages/Donate.jsx';
 import './App.css';
 import './index.css';
-import Navbar from './components/navbar.jsx';
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends Component {
@@ -15,7 +18,13 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Home />
+        <Switch>
+          <Route exact path='/' component={Home}/>
+          <Route path='/about' component={About}/>
+          <Route path='/map' component={LiveMap}/>
+          <Route path='/blog' component={Blog}/>
+          <Route path='/donate' component={Donate}/>
+        </Switch>
       </div>
     );
   }
