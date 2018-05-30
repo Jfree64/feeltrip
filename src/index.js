@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< Updated upstream
-=======
 
 import { Route, Link, MemoryRouter } from 'react-router-dom'
-
->>>>>>> Stashed changes
 import logo from './logo.svg';
 import {BrowserRouter} from 'react-router-dom'
+import Home from './pages/home.jsx';
 import './App.css';
 import './index.css';
-import Navbar from './Navbar.jsx';
+import Navbar from './components/navbar.jsx';
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends Component {
@@ -18,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-
+        <Home />
       </div>
     );
   }
