@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "feeltrip",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,7 +15,7 @@
   "scripts": {
     "start": "NODE_PATH=src react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --modulePaths=src",
     "eject": "react-scripts eject",
     "build-and-deploy": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
   }

@@ -1,14 +1,17 @@
+/*important bs*/
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
 import { Route, Link, BrowserRouter, Switch } from 'react-router-dom'
-import logo from './logo.svg';
+
+/*pages*/
 import Navbar from './components/Navbar.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
 import Donate from './pages/Donate.jsx';
+
+/*style*/
 import './App.css';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
@@ -29,6 +32,8 @@ class App extends Component {
     );
   }
 }
+
+export default App;
 
 ReactDOM.render((
 <BrowserRouter>
