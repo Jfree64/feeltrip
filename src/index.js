@@ -13,8 +13,7 @@ import Donate from './pages/Donate.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
-import './App.css';
-import './index.css';
+import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends Component {
