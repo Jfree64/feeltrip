@@ -1,7 +1,7 @@
 /*important bs*/
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter, Switch } from 'react-router-dom'
+import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
 /*pages*/
 import Navbar from './components/Navbar.jsx';
@@ -10,6 +10,7 @@ import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
 import Donate from './pages/Donate.jsx';
+import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
 import './App.css';
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path='/map' component={LiveMap}/>
           <Route path='/blog' component={Blog}/>
           <Route path='/donate' component={Donate}/>
+          <Route component={NoMatch} />
         </Switch>
       </div>
     );
