@@ -1,38 +1,41 @@
-@import '~bulma/bulma';
+@mixin gradient($from, $to){
+    background: $from; /* Old browsers */
+    background: -moz-linear-gradient(to right, $from, $to); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, $from 0%,$to 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, $from 0%,$to 100%); /* IE10+ */
+    background: linear-gradient(left, $from 0%,$to 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin ftGradient(){
+  @include gradient(#ff69b4, #0FF); /* Old browsers */
+}
+
+@import '~bulma/bulma.sass';
 
 body {
   background: lighten(red, 20%);
+  color: #000;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  @include ftGradient
 }
 
-ul {
-    list-style-type: none;
-    overflow: hidden;
+.button.donate {
+  color: $white;
+  @include ftGradient;
+  border: 0px;
 }
 
-li {
-  float: right;
-}
-
-li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #111111;
-}
 .header {
   position: absolute;
   height: 60px;
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: #000;
 }
 
 

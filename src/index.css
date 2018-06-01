@@ -1,33 +1,53 @@
 @import url(~bulma/css/bulma.css);
 body {
   background: #ff6666;
+  color: #000;
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  background: #fff;
+  /* Old browsers */
+  background: -moz-linear-gradient(to right, #fff, #000);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #fff 0%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #fff 0%, #000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #fff 0%, #000 100%);
+  /* IE10+ */
+  background: linear-gradient(left, #fff 0%, #000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  /* Old browsers */ }
 
-ul {
-  list-style-type: none;
-  overflow: hidden; }
-
-li {
-  float: right; }
-
-li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 0px 16px;
-  text-decoration: none; }
-
-li a:hover {
-  background-color: #111111; }
+.button.donate {
+  background: #fff;
+  /* Old browsers */
+  background: -moz-linear-gradient(to right, #fff, #000);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #fff), color-stop(100%, #000));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #fff 0%, #000 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #fff 0%, #000 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #fff 0%, #000 100%);
+  /* IE10+ */
+  background: linear-gradient(left, #fff 0%, #000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  /* Old browsers */ }
 
 .header {
   position: absolute;
   height: 60px;
   width: 100%;
   overflow: hidden;
-  background-color: #fff; }
+  background-color: #000; }
 
 .headerLogotype {
   float: left;
