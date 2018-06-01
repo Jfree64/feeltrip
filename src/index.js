@@ -10,6 +10,7 @@ import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
 import Donate from './pages/Donate.jsx';
+import Footer from './components/Footer.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path='/donate' component={Donate}/>
           <Route component={NoMatch} />
         </Switch>
+        <Footer />
       </div>
     );
   }

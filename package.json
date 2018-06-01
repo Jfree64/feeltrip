@@ -6,7 +6,9 @@
     "ajv": "^6.5.0",
     "bulma": "^0.7.1",
     "bulma-extensions": "^1.0.32",
+    "contentful": "^6.1.1",
     "moment": "^2.22.1",
+    "node-sass-chokidar": "^1.3.0",
     "npm-run-all": "^4.1.3",
     "nvm": "0.0.4",
     "react": "^16.3.2",
@@ -15,6 +17,8 @@
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.4",
+    "sass": "^1.5.1",
+    "sass-loader": "^7.0.1",
     "styled-components": "^3.3.0",
     "yarn": "^1.7.0"
   },
@@ -29,8 +33,5 @@
     "eject": "react-scripts eject",
     "build-and-deploy": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
   },
-  "devDependencies": {
-    "node-sass-chokidar": "^1.3.0",
-    "sass-loader": "^7.0.1"
-  }
+  "devDependencies": {}
 }

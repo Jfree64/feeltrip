@@ -13,6 +13,7 @@
   @include gradient(#ff69b4, #0FF); /* Old browsers */
 }
 
+@import '~bulma/css/bulma.css';
 @import '~bulma/bulma.sass';
 
 body {
@@ -25,7 +26,7 @@ body {
 }
 
 .button.donate {
-  color: $white;
+  color: #ffffff;
   @include ftGradient;
   border: 0px;
 }
