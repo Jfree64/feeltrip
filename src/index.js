@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
 /*pages*/
-import Navbar from './components/Navbar.jsx';
+import Header from './components/Header.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
@@ -20,7 +20,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <Header />
+
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>

@@ -1,51 +1,45 @@
+@import url(~bulma/css/bulma.css);
 body {
+  background: #ff6666;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
 
 ul {
-    list-style-type: none;
-    overflow: hidden;
-}
+  list-style-type: none;
+  overflow: hidden; }
 
 li {
-  float: right;
-}
+  float: right; }
 
 li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-}
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none; }
 
 li a:hover {
-    background-color: #111111;
-}
+  background-color: #111111; }
+
 .header {
   position: absolute;
   height: 60px;
   width: 100%;
   overflow: hidden;
-  background-color: #fff;
-}
-
+  background-color: #fff; }
 
 .headerLogotype {
   float: left;
-margin-left: 20px;
-  margin-top: 11px;
-}
+  margin-left: 20px;
+  margin-top: 11px; }
 
 .headerLogo {
   margin-top: 10px;
   position: absolute;
-  left: 50%;           /* Start at 50% of browser window */
-    margin-left: -18px;
-}
-
+  left: 50%;
+  /* Start at 50% of browser window */
+  margin-left: -18px; }
 
 #headerImg {
   display: block;
@@ -53,11 +47,9 @@ margin-left: 20px;
   min-height: 900px;
   height: auto;
   background-position: center;
-  background-image: url('./images/headerImg.png');
-  background-repeat: no-repeat;
-}
+  background-image: url("./images/headerImg.png");
+  background-repeat: no-repeat; }
 
 .header.navButton {
   display: inline;
-  float: right;
-}
+  float: right; }

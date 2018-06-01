@@ -1,35 +1,66 @@
 @import '~bulma/bulma';
-@import '~bulma-extensions/extensions';
 
-.App {
-  text-align: center;
+body {
+  background: lighten(red, 20%);
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+ul {
+    list-style-type: none;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+li {
+  float: right;
 }
 
-.App-title {
-  font-size: 1.5em;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
 }
 
-.App-intro {
-  font-size: large;
+li a:hover {
+    background-color: #111111;
+}
+.header {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+.headerLogotype {
+  float: left;
+margin-left: 20px;
+  margin-top: 11px;
 }
 
-.navButton {
-  color: #123456;
+.headerLogo {
+  margin-top: 10px;
+  position: absolute;
+  left: 50%;           /* Start at 50% of browser window */
+    margin-left: -18px;
+}
+
+
+#headerImg {
+  display: block;
+  width: 100vw;
+  min-height: 900px;
+  height: auto;
+  background-position: center;
+  background-image: url('./images/headerImg.png');
+  background-repeat: no-repeat;
+}
+
+.header.navButton {
+  display: inline;
+  float: right;
 }
