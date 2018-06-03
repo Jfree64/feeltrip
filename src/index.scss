@@ -1,3 +1,4 @@
+/*MIXINS AND CUSTOM SCSS*/
 @mixin gradient($from, $to){
     background: $from; /* Old browsers */
     background: -moz-linear-gradient(to right, $from, $to); /* FF3.6+ */
@@ -13,16 +14,19 @@
   @include gradient(#ff69b4, #0FF); /* Old browsers */
 }
 
-@import '~bulma/css/bulma.css';
-@import '~bulma/bulma.sass';
+nav.navbar {
+  border-bottom-width: 0px;
+}
 
+
+
+/*CUSTOM CSS*/
 body {
-  background: lighten(red, 20%);
+  background: black;
   color: #000;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  @include ftGradient
 }
 
 .button.donate {
@@ -55,16 +59,28 @@ margin-left: 20px;
 
 
 #headerImg {
-  display: block;
-  width: 100vw;
   min-height: 900px;
   height: auto;
   background-position: center;
   background-image: url('./images/headerImg.png');
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .header.navButton {
   display: inline;
   float: right;
 }
+
+
+
+
+
+
+
+/*IMPORT THE REST OF THE FUCKING OWL*/
+@import '~bulma/css/bulma.css';
+/*@import '~bulma/bulma.sass'; */

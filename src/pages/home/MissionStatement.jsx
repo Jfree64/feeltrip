@@ -1,0 +1,20 @@
+import React, { Component } from 'react';
+class MissionStatement extends Component {
+    render() {
+        return (
+          <section class="hero is-fullheight">
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  Feel Trip
+                </h1>
+                <h2 class="subtitle">
+                  A ride across america
+                </h2>
+              </div>
+            </div>
+          </section>
+        )
+    }
+}
+export default MissionStatement;

@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import HeroImage from './home/HeroImage.jsx';
+import MissionStatement from './home/MissionStatement.jsx';
 class Home extends Component {
     render() {
         return (
-                <div id="headerImg" className="Header">
-                </div>
+          <div className="Home">
+            <HeroImage />
+            <MissionStatement />
+          </div>
         )
     }
 }

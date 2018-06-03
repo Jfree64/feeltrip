@@ -1,4 +1,5 @@
 @import url(~bulma/css/bulma.css);
+/*@import '~bulma/bulma.sass'; */
 body {
   background: #ff6666;
   color: #000;
