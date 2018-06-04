@@ -3,10 +3,10 @@
     background: $from; /* Old browsers */
     background: -moz-linear-gradient(to right, $from, $to); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left, $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left, $from 0%,$to 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left, $from 0%,$to 100%); /* IE10+ */
-    background: linear-gradient(left, $from 0%,$to 100%); /* W3C */
+    background: -webkit-linear-gradient(to bottom right, $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(to bottom right, $from 0%,$to 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(to bottom right, $from 0%,$to 100%); /* IE10+ */
+    background: linear-gradient(to bottom right, $from 0%,$to 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
@@ -158,4 +158,3 @@ p {
 
 /*IMPORT THE REST OF THE FUCKING OWL*/
 @import '~bulma/css/bulma.css';
-/*@import '~bulma/bulma.sass'; */

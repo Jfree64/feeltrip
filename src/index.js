@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Helmet} from "react-helmet";
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
+import * as contentful from 'contentful'
 
 /*pages*/
 import Header from './components/Header.jsx';
@@ -18,6 +19,17 @@ import NoMatch from './pages/NoMatch.jsx';
 /*style*/
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+
+var client = contentful.createClient({
+  space: 'map6q868erex',
+  accessToken: 'becd0b9c6718713ac430ddf0131bbf958a6bedf27cbd83d1fb2692cbf8960d73' })
+client.getEntries().then(entries => {
+  entries.items.forEach(entry => {
+    if(entry.fields) {
+      console.log(entry.fields)
+    }
+  })
+})
 
 class App extends Component {
   render() {
