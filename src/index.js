@@ -1,6 +1,7 @@
 /*important bs*/
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import {Helmet} from "react-helmet";
 import { Route, BrowserRouter, Switch } from 'react-router-dom'
 
 /*pages*/
@@ -11,6 +12,7 @@ import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
 import Donate from './pages/Donate.jsx';
 import Footer from './components/Footer.jsx';
+import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
@@ -21,13 +23,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>feel trip</title>
+          <link rel="canonical" href="http://feeltrip.us/" />
+        </Helmet>
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/about' component={About}/>
+          <Route path='/the-ride' component={About}/>
           <Route path='/map' component={LiveMap}/>
           <Route path='/blog' component={Blog}/>
           <Route path='/donate' component={Donate}/>
+          <Route path='/coming-soon' component={ComingSoon}/>
           <Route component={NoMatch} />
         </Switch>
         <Footer />
