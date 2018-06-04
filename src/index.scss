@@ -18,18 +18,16 @@
   font-family: 'GT Sectra';
   font-style: normal;
   font-weight: regular;
-  src: local('GT Sectra Fine'), local('GT-Sectra-Fine'),
+  src: url('./fonts/GT-Sectra-Fine-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./fonts/GT-Sectra-Fine-Regular.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/GT-Sectra-Fine-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'GT Sectra';
   font-style: italic;
   font-weight: bold;
-  src: local('GT Sectra Fine'), local('GT-Sectra-Fine'),
+  src: url('./fonts/GT-Sectra-Fine-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('./fonts/GT-Sectra-Fine-Bold-Italic.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/GT-Sectra-Fine-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -37,8 +35,13 @@
   font-style: normal;
   font-weight: bolder;
   src: local('Gotham'), local('gotham'),
+       url('./fonts/Gotham-Medium.otf') format('opentype'), /* Safari, Android, iOS */
        url('./fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
-       url('./fonts/Gotham-Medium.otf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@-webkit-keyframes fontfix {
+  from { opacity: 1; }
+  to { opacity: 1; }
 }
 
 /*HEADER NAVIGATION*/
@@ -91,6 +94,11 @@ body {
   font-family: 'Gotham', serif;
   font-weight: bolder;
   font-size: .8125rem;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
 }
 
 /*TYPOGRAPHY*/
