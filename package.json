@@ -17,6 +17,7 @@
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.4",
+    "s3cmd": "^1.1.0",
     "sass": "^1.5.1",
     "sass-loader": "^7.0.1",
     "styled-components": "^3.3.0",
@@ -31,7 +32,7 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "build-and-deploy": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
+    "fuckitshipit": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
   },
   "devDependencies": {}
 }

@@ -1,61 +1,60 @@
+/*MIXINS AND CUSTOM SCSS*/
 @import url(~bulma/css/bulma.css);
-/*@import '~bulma/bulma.sass'; */
-body {
-  background: #ff6666;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #ff69b4;
-  /* Old browsers */
-  background: -moz-linear-gradient(to right, #ff69b4, #0FF);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff69b4), color-stop(100%, #0FF));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #ff69b4 0%, #0FF 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #ff69b4 0%, #0FF 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #ff69b4 0%, #0FF 100%);
-  /* IE10+ */
-  background: linear-gradient(left, #ff69b4 0%, #0FF 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
-  /* IE6-9 */
-  /* Old browsers */ }
+@font-face {
+  font-family: 'GT Sectra';
+  font-style: normal;
+  font-weight: regular;
+  src: local("GT Sectra Fine"), local("GT-Sectra-Fine"), url("./fonts/GT-Sectra-Fine-Regular.woff") format("woff"), url("./fonts/GT-Sectra-Fine-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GT Sectra';
+  font-style: italic;
+  font-weight: bold;
+  src: local("GT Sectra Fine"), local("GT-Sectra-Fine"), url("./fonts/GT-Sectra-Fine-Bold-Italic.woff") format("woff"), url("./fonts/GT-Sectra-Fine-Bold-Italic.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: bolder;
+  src: local("Gotham"), local("gotham"), url("./fonts/Gotham-Medium.woff") format("woff"), url("./fonts/Gotham-Medium.otf") format("truetype"); }
+
+/*HEADER NAVIGATION*/
+.navbar {
+  min-height: 3.75rem; }
+
+.navbar-item {
+  padding: .05rem 1rem;
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+  font-size: .8125rem; }
 
 .button.donate {
   color: #ffffff;
-  background: #ff69b4;
+  background: #FF2A93;
   /* Old browsers */
-  background: -moz-linear-gradient(to right, #ff69b4, #0FF);
+  background: -moz-linear-gradient(to right, #FF2A93, #7DE0E6);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #ff69b4), color-stop(100%, #0FF));
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FF2A93), color-stop(100%, #7DE0E6));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #ff69b4 0%, #0FF 100%);
+  background: -webkit-linear-gradient(left, #FF2A93 0%, #7DE0E6 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(left, #ff69b4 0%, #0FF 100%);
+  background: -o-linear-gradient(left, #FF2A93 0%, #7DE0E6 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(left, #ff69b4 0%, #0FF 100%);
+  background: -ms-linear-gradient(left, #FF2A93 0%, #7DE0E6 100%);
   /* IE10+ */
-  background: linear-gradient(left, #ff69b4 0%, #0FF 100%);
+  background: linear-gradient(left, #FF2A93 0%, #7DE0E6 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
   /* Old browsers */
-  border: 0px; }
+  border: 0px;
+  height: 2.5rem;
+  font-size: .8125rem;
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
-.header {
-  position: absolute;
-  height: 60px;
-  width: 100%;
-  overflow: hidden;
-  background-color: #000; }
-
-.headerLogotype {
-  float: left;
-  margin-left: 20px;
-  margin-top: 11px; }
+.navbar-item img {
+  max-height: 2.5rem; }
 
 .headerLogo {
   margin-top: 10px;
@@ -64,15 +63,61 @@ body {
   /* Start at 50% of browser window */
   margin-left: -18px; }
 
+.footer {
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: grey; }
+
+body {
+  background: black;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+  font-size: .8125rem; }
+
+/*TYPOGRAPHY*/
+h1.title {
+  color: #FF2A93;
+  font-size: 3rem;
+  font-family: GT Sectra;
+  font-weight: regular; }
+
+h2.subtitle {
+  color: white;
+  font-size: 2.5rem;
+  font-family: GT Sectra;
+  font-weight: bold;
+  font-style: italic; }
+
+h3.label {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Gotham', serif;
+  font-weight: bolder; }
+
+p {
+  font-family: 'GT Sectra', serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.6rem; }
+
 #headerImg {
-  display: block;
-  width: 100vw;
   min-height: 900px;
   height: auto;
   background-position: center;
   background-image: url("./images/headerImg.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.header.navButton {
-  display: inline;
-  float: right; }
+/*HEADER NAVIGATION*/
+.sponsor {
+  padding: 30px 0; }
+
+/*IMPORT THE REST OF THE FUCKING OWL*/
+/*@import '~bulma/bulma.sass'; */

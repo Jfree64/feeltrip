@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logotype from '../images/headerLogotype.png';
 import logo from '../images/headerLogo.png';

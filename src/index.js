@@ -16,7 +16,7 @@ import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
-import './index.scss';
+import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends Component {

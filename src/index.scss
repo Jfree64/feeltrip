@@ -109,6 +109,13 @@ h2.subtitle {
   font-style: italic;
 }
 
+h3.label {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+}
+
 p {
   font-family: 'GT Sectra', serif;
   font-weight: bold;
@@ -135,6 +142,9 @@ p {
 
 /*HEADER NAVIGATION*/
 
+.sponsor {
+  padding: 30px 0;
+}
 
 
 

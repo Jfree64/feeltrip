@@ -7,22 +7,23 @@ class Sponsors extends Component {
     render() {
         return (
           <section class="section has-background-white has-text-dark">
+          <h3 class="label column is-10 is-offset-1 has-text-centered has-text-dark">SPONSORS:</h3>
           <nav class="level">
-            <NavLink class="level-item has-text-centered">
-              <a class="link is-info">Home</a>
+            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
+              <img src={logotype} alt="" style={{height: 30}} />
             </NavLink>
-            <p class="level-item has-text-centered">
-              <a class="link is-info">Menu</a>
-            </p>
-            <p class="level-item has-text-centered">
-              <img src="https://bulma.io/images/bulma-type.png" alt="" style={{height: 30}} />
-            </p>
-            <p class="level-item has-text-centered">
-              <a class="link is-info">Reservations</a>
-            </p>
-            <p class="level-item has-text-centered">
-              <a class="link is-info">Contact</a>
-            </p>
+            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
+              <img src={logotype} alt="" style={{height: 30}} />
+            </NavLink>
+            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
+              <img src={logotype} alt="" style={{height: 30}} />
+            </NavLink>
+            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
+              <img src={logotype} alt="" style={{height: 30}} />
+            </NavLink>
+            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
+              <img src={logotype} alt="" style={{height: 30}} />
+            </NavLink>
           </nav>
           </section>
         )

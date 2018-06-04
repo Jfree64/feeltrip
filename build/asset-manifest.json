@@ -1,7 +1,13 @@
 {
-  "main.css": "static/css/main.88eeb60b.css",
-  "main.css.map": "static/css/main.88eeb60b.css.map",
-  "main.js": "static/js/main.6644f665.js",
-  "main.js.map": "static/js/main.6644f665.js.map",
-  "static/media/headerImg.png": "static/media/headerImg.2fedb465.png"
+  "main.css": "static/css/main.690918e2.css",
+  "main.css.map": "static/css/main.690918e2.css.map",
+  "main.js": "static/js/main.333b7764.js",
+  "main.js.map": "static/js/main.333b7764.js.map",
+  "static/media/GT-Sectra-Fine-Bold-Italic.ttf": "static/media/GT-Sectra-Fine-Bold-Italic.3b0eeb70.ttf",
+  "static/media/GT-Sectra-Fine-Bold-Italic.woff": "static/media/GT-Sectra-Fine-Bold-Italic.4e92bb16.woff",
+  "static/media/GT-Sectra-Fine-Regular.ttf": "static/media/GT-Sectra-Fine-Regular.d7c64844.ttf",
+  "static/media/GT-Sectra-Fine-Regular.woff": "static/media/GT-Sectra-Fine-Regular.25b91f08.woff",
+  "static/media/Gotham-Medium.otf": "static/media/Gotham-Medium.97e8834b.otf",
+  "static/media/Gotham-Medium.woff": "static/media/Gotham-Medium.74f30359.woff",
+  "static/media/headerImg.png": "static/media/headerImg.a5f4886f.png"
 }
