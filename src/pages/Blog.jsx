@@ -1,7 +1,6 @@
 import React from 'react'
 import BlogItem from './blog/BlogItem.jsx'
 import PageHeader from '../components/PageHeader.jsx'
-import PageContent from '../components/PageContent.jsx'
 import * as contentful from 'contentful'
 
 class Blog extends React.Component {
