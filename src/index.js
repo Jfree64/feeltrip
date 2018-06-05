@@ -11,6 +11,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/blog/BlogPost.jsx';
 import Donate from './pages/Donate.jsx';
 import Footer from './components/Footer.jsx';
 import ComingSoon from './pages/ComingSoon.jsx';
@@ -43,10 +44,11 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route path='/the-ride' component={About}/>
-          <Route path='/map' component={LiveMap}/>
-          <Route path='/blog' component={Blog}/>
-          <Route path='/donate' component={Donate}/>
+          <Route exact path='/the-ride' component={About}/>
+          <Route exact path='/map' component={LiveMap}/>
+          <Route exact path='/blog' component={Blog}/>
+          <Route path='/blog/:blogPost' component={BlogPost}/>
+          <Route exact path='/donate' component={Donate}/>
           <Route path='/coming-soon' component={ComingSoon}/>
           <Route component={NoMatch} />
         </Switch>

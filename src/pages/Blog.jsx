@@ -9,8 +9,8 @@ class Blog extends React.Component {
     posts: []
   }
   client = contentful.createClient({
-    space: 'qu10m4oq2u62',
-    accessToken: 'f4a9f68de290d53552b107eb503f3a073bc4c632f5bdd50efacc61498a0c592a'
+    space: 'map6q868erex',
+    accessToken: 'becd0b9c6718713ac430ddf0131bbf958a6bedf27cbd83d1fb2692cbf8960d73'
   })
   componentDidMount() {
     this.fetchPosts().then(this.setPosts);
@@ -24,9 +24,9 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-      <PageHeader color="is-info" title="Code Blog">
+    {/*<PageHeader color="is-info" title="Code Blog">
   Your standard <strong>JavaScript</strong> programming blog, albeit, probably not very good, but I will at least try to keep it entertaining. This blog is a chronological mix of random posts on Angular, React, Functional Programming, and my <strong>project walkthroughs</strong>.
-</PageHeader>
+</PageHeader> */}
       <br/>
       { this.state.posts.map(({fields}, i) =>
         <BlogItem key={i} {...fields} />
