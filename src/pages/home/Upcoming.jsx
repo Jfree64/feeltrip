@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Upcoming extends Component {
     render() {
         return (
-          <section class="section has-text-light">
+          <section class="section has-text-light has-background-black">
           <div class="container is-fluid">
           <h2 class="subtitle column is-10 is-offset-1">a ride across the US to end mental health stigma</h2>
             <div class="columns is-multiline">

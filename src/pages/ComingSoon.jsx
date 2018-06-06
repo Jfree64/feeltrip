@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 class Donate extends Component {
     render() {
         return (
-          <section class="hero is-large">
+          <section class="hero is-large has-background-black">
           <div class="hero-body">
             <div class="container has-text-centered">
               <h1 class="title">
