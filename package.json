@@ -35,5 +35,8 @@
     "eject": "react-scripts eject",
     "fuckitshipit": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1"
+  }
 }
