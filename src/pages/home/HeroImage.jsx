@@ -9,7 +9,7 @@ class HeroImage extends Component {
                   Feel Trip
                 </h1>
                 <h2 class="subtitle">
-                  a ride across the US to end mental health stigma
+                  a ride across the US to end mental health stigma FFFUUU
                 </h2>
               </div>
             </div>

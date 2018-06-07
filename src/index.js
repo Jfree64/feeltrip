@@ -18,7 +18,7 @@ import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 /*style*/
-import './index.css';
+import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 
 var client = contentful.createClient({

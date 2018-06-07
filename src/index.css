@@ -4,7 +4,7 @@
   font-family: 'GT Sectra';
   font-style: normal;
   font-weight: regular;
-  src: url("./fonts/GT-Sectra-Fine-Regular.ttf") format("truetype"), url("./fonts/GT-Sectra-Fine-Regular.woff") format("woff"); }
+  src: url("./fonts/GT-Sectra-Regular.ttf") format("truetype"), url("./fonts/GT-Sectra-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'GT Sectra';
@@ -111,13 +111,17 @@ h3.label {
 
 p {
   font-family: 'GT Sectra', serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.125rem;
-  line-height: 1.6rem; }
+  line-height: 1.8rem;
+  color: #EAEAEA; }
 
 #headerImg {
-  min-height: 900px;
+  min-height: 90vh;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
   height: auto;
+  overflow: visible;
   background-position: center;
   background-image: url("./images/headerImg.png");
   background-repeat: no-repeat;
@@ -125,6 +129,16 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+.is-tilty-left {
+  transform: skew(0deg, -2.5deg);
+  -ms-transform: skew(0deg, -5deg);
+  -webkit-transform: skew(0deg, -2.5deg); }
+
+.is-tilty-right {
+  transform: skew(0deg, 2.5deg);
+  -ms-transform: skew(0deg, 5deg);
+  -webkit-transform: skew(0deg, 2.5deg); }
 
 /*HEADER NAVIGATION*/
 .sponsor {
