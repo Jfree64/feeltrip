@@ -21,17 +21,6 @@ import NoMatch from './pages/NoMatch.jsx';
 import './index.scss';
 import registerServiceWorker from './registerServiceWorker';
 
-var client = contentful.createClient({
-  space: 'map6q868erex',
-  accessToken: 'becd0b9c6718713ac430ddf0131bbf958a6bedf27cbd83d1fb2692cbf8960d73' })
-client.getEntries().then(entries => {
-  entries.items.forEach(entry => {
-    if(entry.fields) {
-      console.log(entry.fields)
-    }
-  })
-})
-
 class App extends Component {
   render() {
     return (
@@ -60,9 +49,9 @@ class App extends Component {
 
 export default App;
 
-ReactDOM.render((
+{/*ReactDOM.render((
 <BrowserRouter>
   <App />
 </BrowserRouter>
 ), document.getElementById('root'));
-registerServiceWorker();
+registerServiceWorker(); */}

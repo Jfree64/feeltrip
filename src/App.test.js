@@ -8,13 +8,14 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 }); */}
 import React from 'react';
+import { expect } from 'chai';
 import { shallow } from 'enzyme';
 import App from './index.js';
 
-const wrapper = shallow(<MyComponent/>);
+const wrapper = shallow(<App/>);
 
 describe('(Component) App', () => {
   it('renders without exploding', () => {
-    expect(wrapper).toHaveLength(1)
+    expect(wrapper).to.have.lengthOf(1)
   });
 });
