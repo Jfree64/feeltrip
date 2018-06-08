@@ -3,6 +3,7 @@ import HeroImage from './home/HeroImage.jsx';
 import MissionStatement from './home/MissionStatement.jsx';
 import Sponsors from './home/Sponsors.jsx';
 import Upcoming from './home/Upcoming.jsx';
+import ImageTiles from './home/ImageTiles.jsx';
 
 class Home extends Component {
     render() {
@@ -10,8 +11,9 @@ class Home extends Component {
           <div className="Home">
             <HeroImage />
             <MissionStatement />
-            <Sponsors />
+            {/* <Sponsors />
             <Upcoming />
+            <ImageTiles /> */}
           </div>
         )
     }

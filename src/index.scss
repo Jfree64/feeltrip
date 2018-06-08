@@ -76,7 +76,7 @@ $text-grey: #EAEAEA;
 .headerLogo {
   margin-top: 10px;
   position: absolute;
-  left: 50%;           /* Start at 50% of browser window */
+  left: 50%; /* Start at 50% of browser window */
     margin-left: -18px;
 }
 
@@ -90,7 +90,6 @@ $text-grey: #EAEAEA;
 
 body {
   background: white;
-  background-color: #00FF00;
   margin: 0;
   padding: 0;
   font-family: 'Gotham', serif;
@@ -126,14 +125,37 @@ h3.label {
   font-weight: bolder;
 }
 
+/*h1 span {
+  color: black;
+  background-color: white;
+  padding: 4px 10px;
+  margin: 10px 0px;
+}
+
+h2 span {
+  color: black;
+  background-color: white;
+  padding: 4px 10px;
+  margin: 10px 0px;
+}*/
+
 p {
   font-family: 'GT Sectra', serif;
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.8rem;
-  color: $text-grey;
 }
 
+.has-text-link {
+  padding: .05rem 1rem;
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+  font-size: .8125rem;
+}
+
+span.line {
+  display: inline-block;
+}
 
 
 #headerImg {
@@ -163,12 +185,35 @@ p {
 -webkit-transform:skew(0deg,2.5deg);
 }
 
+.has-text-light {
+  color: $text-grey;
+}
+
+.image-tile {
+
+}
+
+.is-constrained {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1.5rem;
+}
 
 /*HEADER NAVIGATION*/
 
 .sponsor {
   padding: 30px 0;
 }
+
+::selection {
+  background: #FF2A93; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #FF2A93; /* Gecko Browsers */
+}
+
+
+
 
 /*IMPORT THE REST OF THE FUCKING OWL*/
 @import '~bulma/css/bulma.css';

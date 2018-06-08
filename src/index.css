@@ -77,8 +77,23 @@
   color: grey; }
 
 body {
-  background: white;
-  background-color: #00FF00;
+  background: #FF2A93;
+  /* Old browsers */
+  background: -moz-linear-gradient(to right, #FF2A93, #7DE0E6);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #FF2A93), color-stop(100%, #7DE0E6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(to bottom right, #FF2A93 0%, #7DE0E6 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(to bottom right, #FF2A93 0%, #7DE0E6 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(to bottom right, #FF2A93 0%, #7DE0E6 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom right, #FF2A93 0%, #7DE0E6 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  /* Old browsers */
   margin: 0;
   padding: 0;
   font-family: 'Gotham', serif;

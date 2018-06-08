@@ -1,7 +1,9 @@
 /*important bs*/
 import React, { Component } from 'react';
-import {Helmet} from "react-helmet";
 import { Route, Switch } from 'react-router-dom'
+
+/*head*/
+import Head from './components/Head.jsx'
 
 /*pages*/
 import Header from './components/Header.jsx';
@@ -22,15 +24,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>feel trip</title>
-          <link rel="canonical" href="http://feeltrip.us/" />
-        </Helmet>
+        <Head />
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/the-ride' component={About}/>
+          <Route exact path='/about' component={About}/>
           <Route exact path='/map' component={LiveMap}/>
           <Route exact path='/blog' component={Blog}/>
           <Route path='/blog/:blogPost' component={BlogPost}/>

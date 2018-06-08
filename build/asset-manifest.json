@@ -1,5 +1,11 @@
 {
-  "main.js": "static/js/main.b8e0e09a.js",
-  "main.js.map": "static/js/main.b8e0e09a.js.map",
-  "static/media/index.scss": "static/media/index.63ce3a0e.scss"
+  "main.js": "static/js/main.a3569a31.js",
+  "main.js.map": "static/js/main.a3569a31.js.map",
+  "static/media/GT-Sectra-Fine-Bold-Italic.ttf": "static/media/GT-Sectra-Fine-Bold-Italic.3b0eeb70.ttf",
+  "static/media/GT-Sectra-Fine-Bold-Italic.woff": "static/media/GT-Sectra-Fine-Bold-Italic.4e92bb16.woff",
+  "static/media/GT-Sectra-Regular.ttf": "static/media/GT-Sectra-Regular.ad948de8.ttf",
+  "static/media/GT-Sectra-Regular.woff": "static/media/GT-Sectra-Regular.50d9d7de.woff",
+  "static/media/Gotham-Medium.otf": "static/media/Gotham-Medium.97e8834b.otf",
+  "static/media/Gotham-Medium.woff": "static/media/Gotham-Medium.74f30359.woff",
+  "static/media/headerImg.png": "static/media/headerImg.a5f4886f.png"
 }

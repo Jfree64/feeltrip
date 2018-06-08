@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+
 class Donate extends Component {
     render() {
         return (
-          <section class="hero is-large has-background-black">
-          <div class="hero-body">
-            <div class="container has-text-centered">
-              <h1 class="title">
+          <section className="hero is-large has-background-black">
+          <div className="hero-body">
+            <div className="container has-text-centered">
+              <h1 className="title">
                 COMING SOON
               </h1>
-              <h2 class="subtitle">
+              <h2 className="subtitle">
                 building a website is hard, guys...
               </h2>
             </div>
