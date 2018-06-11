@@ -17,7 +17,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="navbar" aria-label="main navigation">
+      <nav className="navbar is-fixed-top" aria-label="main navigation">
       {/*feeltrip logo*/}
         <NavLink to="/" className='headerLogo'>
           <img  style={{marginRight: 15, height: 40}} src={logo} alt="logo"/>
