@@ -14,7 +14,7 @@ const Head = () => (
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    {/* Global site tag (gtag.js) - Google Analytics */}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120672166-1"/>
     <script>
       window.dataLayer = window.dataLayer || [];
