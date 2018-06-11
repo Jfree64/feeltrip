@@ -40,9 +40,9 @@ class Header extends React.Component {
             <NavLink to="/coming-soon" className="navbar-item" > ABOUT </NavLink>
               <NavLink to="/coming-soon" className="navbar-item"> MAP </NavLink>
               <NavLink to="/blog" className="navbar-item"> BLOG </NavLink>
-              <NavLink to="/coming-soon" className="navbar-item">
-                <div to="/coming-soon" className="button donate"> DONATE </div>
-              </NavLink>
+              <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
+                <div className="button donate"> DONATE </div>
+              </a>
             </div>
         </div>
       </nav>
