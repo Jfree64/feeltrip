@@ -10,7 +10,7 @@ const BlogNav = ({ to, date }) => (
 </Link>
     </div>
     <div className="level-right">
-      <p className="level-item has-text-link is-size-7">
+      <p className="level-item has-text-link">
         {moment(date).calendar(null, {
           sameDay: '[Today]',
           lastDay: '[Yesterday]',

@@ -3,7 +3,7 @@ import * as Markdown from 'react-markdown'
 
 const BlogContent = (props) => (
   <article className="section">
-    <div className="media-content">
+    <div className="media-content is-constrained">
       <div className="content">
         <h1>{props.title}</h1>
         <Markdown

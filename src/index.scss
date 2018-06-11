@@ -44,6 +44,26 @@
   to { opacity: 1; }
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes party {
+    0%   {color: #FF2A93;}
+    50%   {color: #7DE0E6;}
+    100%   {color: #FF2A93;}
+}
+
+@-moz-keyframes party {
+    0%   {color: #FF2A93;}
+    50%   {color: #7DE0E6;}
+    100%   {color: #FF2A93;}
+}
+
+/* Standard syntax */
+@keyframes party {
+    0%   {color: #FF2A93;}
+    50%   {color: #7DE0E6;}
+    100%   {color: #FF2A93;}
+}
+
 $text-grey: #EAEAEA;
 
 /*HEADER NAVIGATION*/
@@ -151,6 +171,7 @@ p {
   font-family: 'Gotham', serif;
   font-weight: bolder;
   font-size: .8125rem;
+  text-transform: uppercase;
 }
 
 span.line {
@@ -199,6 +220,19 @@ span.line {
   padding: 1.5rem;
 }
 
+/* BLOG*/
+.blog-item-header {
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.blog-post-header {
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 /*HEADER NAVIGATION*/
 
 .sponsor {
@@ -212,7 +246,14 @@ span.line {
   background: #FF2A93; /* Gecko Browsers */
 }
 
-
+a:hover {
+  -webkit-animation: party 2s;
+-moz-animation: party 2s;
+animation: party 2s;
+-webkit-animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
 
 
 /*IMPORT THE REST OF THE FUCKING OWL*/
