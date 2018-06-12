@@ -1,11 +1,8 @@
-/*important bs*/
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
-/*head*/
 import Head from './components/Head.jsx'
 
-/*pages*/
 import Header from './components/Header.jsx';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
@@ -17,7 +14,6 @@ import Footer from './components/Footer.jsx';
 import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
-/*style*/
 import './index.scss';
 
 class App extends Component {

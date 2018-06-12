@@ -220,11 +220,27 @@ span.line {
   padding: 1.5rem;
 }
 
+/* PAGE */
+.page-header {
+    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.page-header-title {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%,0);
+  text-align: center;
+}
+
 /* BLOG*/
 .blog-item-header {
     height: 400px;
     overflow: hidden;
     object-fit: cover;
+    padding: 0 20px;
 }
 
 .blog-post-header {

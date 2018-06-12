@@ -4,12 +4,12 @@ import BlogNav from './shared/BlogNav'
 import BlogContent from './shared/BlogContent'
 import Disqus from 'disqus-react';
 
-const disqusShortname = 'feeltripride';
-const disqusConfig = {
-    url: this.props.titleImage.fields.file.url,
-    identifier: this.props.titleImage.fields.file.url,
+{/*const disqusShortname = 'feeltripride';
+const disqusConfig = (props) => {
+    url: `http://feeltrip.us/blog/${props.path}`,
+    identifier: props.path,
     title: props.title,
-};
+};*/}
 
 const BlogPost = ({ location: { state: { props } }}) => (
   <article>
@@ -18,11 +18,11 @@ const BlogPost = ({ location: { state: { props } }}) => (
     </section>
     <PageContent>
       <BlogNav date={props.date} to="/blog" />
-      <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
+      {/*<Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
                     Comments
-      </Disqus.CommentCount>
+      </Disqus.CommentCount>*/}
       <BlogContent {...props } />
-      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      {/*<Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />*/}
     </PageContent>
   </article>
 )
