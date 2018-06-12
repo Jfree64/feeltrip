@@ -17,11 +17,11 @@ class Header extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-fixed-top" aria-label="main navigation">
+      <nav className="navbar" aria-label="main navigation">
       {/*feeltrip logo*/}
-        <NavLink to="/" className='headerLogo'>
-          <img  style={{marginRight: 15, height: 40}} src={logo} alt="logo"/>
-        </NavLink>
+          <NavLink to="/" className='headerLogo'>
+            <img  style={{marginRight: 15, height: 40}} src={logo} alt="logo"/>
+          </NavLink>
       {/*feeltrip logotype and hamburger*/}
         <div className="navbar-brand">
           <NavLink to="/" className="navbar-item is-hidden-mobile">
@@ -34,15 +34,17 @@ class Header extends React.Component {
           </button>
         </div>
       {/*collapsable nav links*/}
+
         <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-end">
-            <NavLink to="/" className="navbar-item" > HOME </NavLink>
-            <NavLink to="/coming-soon" className="navbar-item" > ABOUT </NavLink>
+              <NavLink to="/" className="navbar-item" > HOME </NavLink>
+              <NavLink to="/about" className="navbar-item" > ABOUT </NavLink>
               <NavLink to="/coming-soon" className="navbar-item"> MAP </NavLink>
               <NavLink to="/blog" className="navbar-item"> BLOG </NavLink>
-              <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
-                <div className="button donate"> DONATE </div>
-              </a>
+
+            <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
+              <div className='button donate'> DONATE </div>
+            </a>
             </div>
         </div>
       </nav>

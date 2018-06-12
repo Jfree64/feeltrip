@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class MissionStatement extends Component {
     render() {
         return (
-          <section className="section has-text-light has-background-black is-tilty-right">
-          <div className='is-constrained'>
+          <section className="section has-text-light has-background-black is-tilty-right no-padding-top">
+          <div className='no-padding-top is-constrained'>
           <div className="container is-fluid is-tilty-left">
           <h2 className="subtitle column has-text-centered"><span class="line">a ride across the US to end</span> <span class="line"> mental health stigma</span></h2>
             <div className="columns is-multiline">

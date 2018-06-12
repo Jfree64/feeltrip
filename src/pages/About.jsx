@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
+import PageHeader from '../components/PageHeader.jsx'
+
+import aboutHeader from '../images/aboutHeader.png'
+
 class About extends Component {
     render() {
         return (
-                <div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                ABOUT SOME STUFF
-                </div>
+          <PageHeader color="is-info" title="Code Blog" img={aboutHeader}>
+        don't just be about it, talk about it.
+      </PageHeader>
         )
     }
 }

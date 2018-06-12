@@ -5,11 +5,13 @@ import Sponsors from './home/Sponsors.jsx';
 import Upcoming from './home/Upcoming.jsx';
 import ImageTiles from './home/ImageTiles.jsx';
 
+import heroImage from '../images/headerImg.png'
+
 class Home extends Component {
     render() {
         return (
           <div className="Home">
-            <HeroImage />
+            <HeroImage img={heroImage} />
             <MissionStatement />
             {/* <Sponsors />
             <Upcoming />

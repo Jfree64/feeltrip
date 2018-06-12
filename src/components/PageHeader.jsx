@@ -1,4 +1,5 @@
 import React from 'react'
+
 const PageHeader = (props) => (
   <section className={`hero is-bold`}>
     <img src={props.img} className="page-header" />
