@@ -15,6 +15,7 @@ import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 import './index.scss';
+{/*import BlogPost2 from './pages/blog/BlogPost2.jsx'; */}
 
 class App extends Component {
   render() {
