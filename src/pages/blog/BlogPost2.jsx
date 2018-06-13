@@ -4,36 +4,32 @@ import BlogNav from './shared/BlogNav'
 import BlogContent from './shared/BlogContent'
 import Disqus from 'disqus-react';
 
-class BlogPost extends React.Component {
 
-disqusShortname = 'feeltripride';
+const disqusShortname = 'feeltripride';
 
-disqusConfig = ({ location: { state: { props } }}) => (
-    url: props.url,
-    identifier: props.path,
-    title: props.title,
-),
+{/*const disqusConfig = {
+    url: this.props.url,
+    identifier: this.props.path,
+    title: this.props.title,
+}*/}
 
 const BlogPost = ({ location: { state: { props } }}) => (
-
-
-render() {
-return(
   <article>
     <section class="hero is-medium is-primary is-bold">
         <img className="blog-post-header" src={props.titleImage.fields.file.url} />
     </section>
     <PageContent>
       <BlogNav date={props.date} to="/blog" />
-      <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
+      <Disqus.CommentCount shortname={disqusShortname} >
                     Comments
       </Disqus.CommentCount>
       <BlogContent {...props } />
-      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
+      <Disqus.DiscussionEmbed shortname={disqusShortname} />
+      {console.log('FUCK YES')}
     </PageContent>
   </article>
 )
-)
-}
-}
+
+{/*config={disqusConfig}*/}
+
 export default BlogPost
