@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import BlogItem from './blog/BlogItem.jsx'
-import PageHeader from '../components/PageHeader.jsx'
-import { Loader } from ‘./components/Loader’
+import BlogItem from './blog/BlogItem'
+import PageHeader from '../components/PageHeader'
+import { Loader } from '../components/Loader'
 import * as contentful from 'contentful'
 
 import blogHeader from '../images/blogHeader.png'

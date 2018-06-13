@@ -6,7 +6,7 @@ class MissionStatement extends Component {
           <section className="section has-text-light has-background-black is-tilty-right no-padding-top">
           <div className='no-padding-top is-constrained'>
           <div className="container is-fluid is-tilty-left">
-          <h2 className="subtitle column has-text-centered"><span class="line">a ride across the US to end</span> <span class="line"> mental health stigma</span></h2>
+          <h2 className="subtitle column has-text-centered"><span className="line">a ride across the US to end</span> <span className="line"> mental health stigma</span></h2>
             <div className="columns is-multiline">
               <div className="column text-is-centered">
                 <p>Feel trip is a series of rides with one goal - To bring light to mental illness issues in an effort to reduce, and eventually eliminate, the surrounding stigma.
