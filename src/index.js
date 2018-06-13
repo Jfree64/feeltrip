@@ -9,8 +9,10 @@ import ReactGA from 'react-ga';
 // Redux Store
 import { Provider } from 'react-redux'
 import { configureStore } from './store'
+import { loadBlog } from './store/Blog'
 
 const store = configureStore()
+store.dispatch(loadBlog())
 
 ReactGA.initialize('UA-120672166-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
