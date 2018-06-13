@@ -1,7 +1,7 @@
 /**
 * Blog Reducer
 */
-import initialState from '../../store/initialState'
+import initialState from '../initialState'
 import * as types from './types'
 export default function blogReducer(state = initialState.blog, action) {
   switch (action.type) {
