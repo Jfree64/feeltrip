@@ -16,6 +16,7 @@ const BlogContent = (props) => (
       </div>
       { props.children }
     </div>
+    {window.scrollTo(0, 0)}
   </article>
 )
 export default BlogContent

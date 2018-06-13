@@ -214,6 +214,7 @@ span.line {
   object-fit: cover;
   object-position: bottom; }
 
+/*HEADER*/
 .page-header {
   height: 400px;
   overflow: hidden;
@@ -226,6 +227,12 @@ span.line {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center; }
+
+/*FOOTER*/
+.footer::before {
+  content: url("./images/headerImg.png");
+  width: 100%;
+  height: 40px; }
 
 /* BLOG*/
 .blog-item-header {
