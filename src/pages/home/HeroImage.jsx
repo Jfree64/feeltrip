@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const HeroImage = (props) => (
           <section className="hero has-background-black headerImg">
             <img src={props.img} className="hero-image"/>
-            {/*<div className="hero-body">
-              <div class="container">
-                <h1 class="title">
-                  <span>Feel Trip</span>
+            <div className="hero-body page-header-title">
+              <div className="container">
+                <h1 className="title">
+                  FEEL TRIP
                 </h1>
-                <h2 class="subtitle">
-                  <span>a ride across the US to end mental health stigma</span>
+                <h2 className="subtitle">
+                  this is a subtitle
                 </h2>
               </div>
-            </div>*/}
+            </div>
           </section>
 
 )

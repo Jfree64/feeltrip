@@ -1,14 +1,38 @@
 import React, { Component } from 'react';
-import PageHeader from '../components/PageHeader.jsx'
+import PageHeader from '../components/PageHeader'
+import TheMission from './about/TheMission'
+import TheRide from './about/TheRide'
+import RiderProfile from './about/RiderProfile'
+import FAQ from './about/FAQ.jsx'
 
 import aboutHeader from '../images/aboutHeader.png'
+import jonoPhoto from '../images/aboutHeader.png'
+import erinPhoto from '../images/aboutHeader.png'
+
+
+const riders = [
+  {id: 1,
+  name: 'Jono Freeman',
+  img: {jonoPhoto},
+  bio: 'He is super cool!'},
+  {id: 2,
+  name: 'Erin Poland',
+  img: {erinPhoto},
+  bio: 'She is super cooler!'}
+];
 
 class About extends Component {
     render() {
         return (
-          <PageHeader color="is-info" title="Code Blog" img={aboutHeader}>
-        don't just be about it, talk about it.
-      </PageHeader>
+          <div>
+            <PageHeader color="is-info" title="ABOUT" img={aboutHeader}>
+              don't just be about it, talk about it.
+            </PageHeader>
+            <TheMission />
+            <TheRide />
+            <RiderProfile riders={riders}/>
+            <FAQ />
+          </div>
         )
     }
 }

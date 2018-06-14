@@ -14,8 +14,8 @@ class Home extends Component {
             <HeroImage img={heroImage} />
             <MissionStatement />
             <Sponsors />
-            {/*<Upcoming />
-            <ImageTiles /> */}
+            <Upcoming />
+            {/*<ImageTiles /> */}
           </div>
         )
     }
