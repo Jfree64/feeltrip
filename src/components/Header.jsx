@@ -37,10 +37,10 @@ class Header extends React.Component {
 
         <div className={ this.state.isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
           <div className="navbar-end">
-              <NavLink to="/" className="navbar-item" > HOME </NavLink>
-              <NavLink to="/about" className="navbar-item" > ABOUT </NavLink>
-              <NavLink to="/coming-soon" className="navbar-item"> MAP </NavLink>
-              <NavLink to="/blog" className="navbar-item"> BLOG </NavLink>
+              <NavLink to="/" className="navbar-item navbar-text" > HOME </NavLink>
+              <NavLink to="/about" className="navbar-item navbar-text" > ABOUT </NavLink>
+              <NavLink to="/coming-soon" className="navbar-item navbar-text"> MAP </NavLink>
+              <NavLink to="/blog" className="navbar-item navbar-text"> BLOG </NavLink>
 
             <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
               <div className='button donate'> DONATE </div>

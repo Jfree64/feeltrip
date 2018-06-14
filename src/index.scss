@@ -73,7 +73,6 @@ $text-grey: #EAEAEA;
 }
 
 .navbar-item {
-  padding: .05rem 1rem;
   font-family: 'Gotham', serif;
   font-weight: bolder;
   font-size: .8125rem;
@@ -97,6 +96,7 @@ $text-grey: #EAEAEA;
 
 .navbar-item img {
   max-height: 2.5rem;
+  padding: 0 20px;
 }
 
 .headerLogo {
