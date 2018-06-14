@@ -9,14 +9,12 @@ class MissionStatement extends Component {
           <h2 className="subtitle column has-text-centered"><span className="line">a ride across the US to end</span> <span className="line"> mental health stigma</span></h2>
             <div className="columns is-multiline">
               <div className="column text-is-centered">
-                <p>Feel trip is a series of rides with one goal - To bring light to mental illness issues in an effort to reduce, and eventually eliminate, the surrounding stigma.
+                <p>feel trip is a series of rides with one goal - To bring light to mental health issues in an effort to reduce, and eventually eliminate, the surrounding stigma.
 
-As we ride, we share the stories of those directly affected by mental health issues on our blog, capture and share our journey via social media, and raise funds for the National Alliance for Mental Illness (NAMI).
-
-Sharing is hard. We challenge ourselves in the hopes that we can inspire others to do the same.</p>
+As we ride, we share the stories of those directly affected by mental health issues on our blog, capture and share our journey via social media, and raise funds for a chraritable organization.</p>
               </div>
               <div className="column text-is-centered">
-                <p>Our first ride, feel trip:US, is </p>
+                <p>Our first feel trip takes us across the united states as we fundraise for this year's charitable organization: the National Alliance for Mental Illness (NAMI) Sharing is hard. We challenge ourselves in the hopes that we can inspire others to do the same.</p>
               </div>
               </div>
           </div>

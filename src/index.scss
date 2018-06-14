@@ -129,17 +129,24 @@ body {
 }
 
 /*TYPOGRAPHY*/
+.content h1 {
+  font-size: 4rem;
+  font-family: 'GT Sectra', serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
 h1.title {
   color: #FF2A93;
   font-size: 3rem;
-  font-family: GT Sectra;
+  font-family: 'GT Sectra', serif;
   font-weight: regular;
 }
 
 h2.subtitle {
   color: white;
   font-size: 2.5rem;
-  font-family: GT Sectra;
+  font-family: 'GT Sectra', serif;
   font-weight: bold;
   font-style: italic;
 }
@@ -238,7 +245,7 @@ span.line {
   height: 90vh;
   overflow: visible;
   object-fit: cover;
-  object-position: bottom;
+  object-position: c;
 }
 
 /*HEADER*/
@@ -262,16 +269,11 @@ span.line {
 
 }
 
-.footer::before {
+/*.footer::before {
   content: url('./images/headerImg.png');
   width:100%;
   height:40px;
-}
-
-
-
-
-
+}*/
 
 /* BLOG*/
 .blog-item-header {
@@ -293,6 +295,10 @@ span.line {
   padding: 30px 0;
 }
 
+.sponsorImg {
+  height: auto !important;
+}
+
 ::selection {
   background: #FF2A93; /* WebKit/Blink Browsers */
 }
@@ -302,11 +308,11 @@ span.line {
 
 a:hover {
   -webkit-animation: party 2s;
--moz-animation: party 2s;
-animation: party 2s;
--webkit-animation-iteration-count: infinite;
--moz-animation-iteration-count: infinite;
-animation-iteration-count: infinite;
+  -moz-animation: party 2s;
+  animation: party 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 

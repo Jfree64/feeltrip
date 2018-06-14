@@ -1,29 +1,30 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import chela from '../../images/sponsorChela.png';
 import logotype from '../../images/headerLogotype.png';
 
 class Sponsors extends Component {
     render() {
         return (
-          <section class="section has-background-white has-text-dark">
-          <h3 class="label column is-10 is-offset-1 has-text-centered has-text-dark">SPONSORS:</h3>
-          <nav class="level">
-            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
-              <img src={logotype} alt="" style={{height: 30}} />
-            </NavLink>
-            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
-              <img src={logotype} alt="" style={{height: 30}} />
-            </NavLink>
-            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
-              <img src={logotype} alt="" style={{height: 30}} />
-            </NavLink>
-            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
-              <img src={logotype} alt="" style={{height: 30}} />
-            </NavLink>
-            <NavLink to="/coming-soon" class="sponsor level-item has-text-centered">
-              <img src={logotype} alt="" style={{height: 30}} />
-            </NavLink>
+          <section className="section has-background-white has-text-dark">
+          <h3 className="label column is-10 is-offset-1 has-text-centered has-text-dark">SPONSORS:</h3>
+          <nav className="level">
+            <a to="/coming-soon" className="sponsor level-item has-text-centered">
+              <img src={chela} className="sponsorImg" alt="" style={{height: 30}} />
+            </a>
+            <a to="/coming-soon" className="sponsor level-item has-text-centered">
+              <img src={logotype} className="sponsorImg" alt="" style={{height: 30}} />
+            </a>
+            <a to="/coming-soon" className="sponsor level-item has-text-centered">
+              <img src={logotype} className="sponsorImg" alt="" style={{height: 30}} />
+            </a>
+            <a to="/coming-soon" className="sponsor level-item has-text-centered">
+              <img src={logotype} className="sponsorImg" alt="" style={{height: 30}} />
+            </a>
+            <a to="/coming-soon" className="sponsor level-item has-text-centered">
+              <img src={logotype} className="sponsorImg" alt="" style={{height: 30}} />
+            </a>
           </nav>
           </section>
         )
