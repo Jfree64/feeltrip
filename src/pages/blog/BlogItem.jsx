@@ -5,7 +5,8 @@ import BlogContent from './shared/BlogContent'
 const BlogItem = (props) => (
 <section>
   <section className="hero is-bold" >
-      <img src={props.titleImage.fields.file.url} className="blog-item-header" />
+      <img src={props.titleImage.fields.file.url} className="blog-item-header"
+      alt=""/>
     </section>
   <div className="box">
     <BlogContent limit={150} {...props }>

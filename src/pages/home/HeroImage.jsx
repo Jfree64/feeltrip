@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroImage = (props) => (
           <section className="hero has-background-black headerImg">
-            <img src={props.img} className="hero-image"/>
+            <img src={props.img} className="hero-image" alt=""/>
             <div className="hero-body page-header-title">
               <div className="container">
                 <h1 className="title">

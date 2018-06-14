@@ -2,7 +2,7 @@ import React from 'react'
 
 const PageHeader = (props) => (
   <section className={`hero is-bold`}>
-    <img src={props.img} className="page-header" />
+    <img src={props.img} className="page-header" alt=""/>
     <div className="hero-body page-header-title">
       <div className="container">
         <h1 className="title">
