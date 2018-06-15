@@ -25,12 +25,12 @@ class About extends Component {
     render() {
         return (
           <div>
-            <PageHeader color="is-info" title="ABOUT" img={aboutHeader}>
-              don't just be about it, talk about it.
+            <PageHeader color="is-info" title="" img={aboutHeader}>
+              <span className="line">don't just be about it, </span><span className="line">talk about it.</span>
             </PageHeader>
             <TheMission />
             <TheRide />
-            <RiderProfile riders={riders}/>
+            {/*<RiderProfile riders={riders}/>*/}
             <FAQ />
           </div>
         )

@@ -23,9 +23,6 @@ const BlogPost = ({ location: { state: { props } }}) => (
     </section>
     <PageContent>
       <BlogNav date={props.date} to="/blog" />
-      <Disqus.CommentCount shortname={disqusShortname} config={disqusConfig}>
-                    Comments
-      </Disqus.CommentCount>
       <BlogContent {...props } />
       <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig}/>
     </PageContent>

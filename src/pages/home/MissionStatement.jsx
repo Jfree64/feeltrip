@@ -11,10 +11,10 @@ class MissionStatement extends Component {
               <div className="column text-is-centered">
                 <p>feel trip is a series of rides with one goal - To bring light to mental health issues in an effort to reduce, and eventually eliminate, the surrounding stigma.
 
-As we ride, we share the stories of those directly affected by mental health issues on our blog, capture and share our journey via social media, and raise funds for a chraritable organization.</p>
+As we ride, we share the stories of those directly affected by mental health issues on our blog, capture and share our own journey via social media, and raise funds for a chraritable organization.</p>
               </div>
               <div className="column text-is-centered">
-                <p>Our first feel trip takes us across the united states as we fundraise for this year's charitable organization: the National Alliance for Mental Illness (NAMI) Sharing is hard. We challenge ourselves in the hopes that we can inspire others to do the same.</p>
+                <p>Our first feel trip takes us across the United States as we fundraise for the National Alliance for Mental Illness (NAMI). Riding a bike 3500 miles is hard, but opening up about mental health can be even more difficult. We challenge ourselves with both in the hopes that we can inspire others to do the same.</p>
               </div>
               </div>
           </div>

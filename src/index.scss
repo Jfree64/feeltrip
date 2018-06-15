@@ -115,7 +115,7 @@ $text-grey: #EAEAEA;
 }
 
 body {
-  background: white;
+  background: black;
   margin: 0;
   padding: 0;
   font-family: 'Gotham', serif;
@@ -151,6 +151,12 @@ h2.subtitle {
   font-style: italic;
 }
 
+h3.question {  color: white;
+  font-size: 1.75rem;
+  font-family: 'GT Sectra', serif;
+  font-weight: bold;
+  font-style: italic;}
+
 h3.label {
   color: black;
   font-size: 1rem;
@@ -177,6 +183,10 @@ p {
   font-weight: normal;
   font-size: 1.125rem;
   line-height: 1.8rem;
+}
+
+a {
+  color: #FF2A93;
 }
 
 .has-text-link {
@@ -276,6 +286,11 @@ span.line {
 }*/
 
 /* BLOG*/
+
+article {
+  background: white;
+}
+
 .blog-item-header {
     height: 400px;
     overflow: hidden;
@@ -287,6 +302,10 @@ span.line {
   height: 500px;
   overflow: hidden;
   object-fit: cover;
+}
+
+article.section {
+  padding-top: 0px;
 }
 
 /*HEADER NAVIGATION*/
