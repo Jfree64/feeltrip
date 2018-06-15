@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroImage = (props) => (
           <section className="hero has-background-black headerImg">
-            <img src={props.img} className="hero-image"/>
+            <img src={props.img} className="hero-image" alt=""/>
             <div className="hero-body page-header-title">
               <div className="container">
                 <h1 className="title">
@@ -11,6 +11,9 @@ const HeroImage = (props) => (
                 <h2 className="subtitle">
                   this is a subtitle
                 </h2>
+                <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="is-centered">
+                  <div className='button donate'> DONATE </div>
+                </a>
               </div>
             </div>
           </section>

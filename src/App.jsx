@@ -8,14 +8,13 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import LiveMap from './pages/LiveMap.jsx';
 import Blog from './pages/Blog.jsx';
-import BlogPost from './pages/blog/BlogPost2.jsx';
+import BlogPost from './pages/blog/BlogPost.jsx';
 import Donate from './pages/Donate.jsx';
 import Footer from './components/Footer.jsx';
 import ComingSoon from './pages/ComingSoon.jsx';
 import NoMatch from './pages/NoMatch.jsx';
 
 import './index.scss';
-{/*import BlogPost2 from './pages/blog/BlogPost2.jsx'; */}
 
 class App extends Component {
   render() {

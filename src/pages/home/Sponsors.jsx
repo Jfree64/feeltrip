@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 
 import chela from '../../images/sponsorChela.png';
 import logotype from '../../images/headerLogotype.png';
