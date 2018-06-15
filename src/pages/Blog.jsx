@@ -10,9 +10,9 @@ class Blog extends React.Component {
   render() {
     return (
       <div>
-        <PageHeader color="is-info" title="" img={blogHeader}>
+        {/*<PageHeader color="is-info" title="" img={blogHeader}>
           don't just be about it, talk about it.
-        </PageHeader>
+        </PageHeader> */}
         { this.props.blog.loading
           ? <Loader className="has-text-primary"></Loader>
           : <div>

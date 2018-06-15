@@ -6,10 +6,10 @@ const HeroImage = (props) => (
             <div className="hero-body page-header-title is-hidden-desktop">
               <div className="container">
                 <h1 className="title is-size-2-mobile">
-                  FEEL TRIP
+                  feel trip
                 </h1>
                 <h2 className="is-size-2 is-size-3-mobile subtitle">
-                  this is a subtitle
+                  stigma ends here
                 </h2>
                 <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="is-centered">
                   <div className='button gradient'> DONATE </div>

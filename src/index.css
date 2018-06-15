@@ -283,8 +283,7 @@ article {
 .blog-item-header {
   height: 400px;
   overflow: hidden;
-  object-fit: cover;
-  padding: 0 20px; }
+  object-fit: cover; }
 
 .blog-post-header {
   height: 500px;
@@ -302,12 +301,14 @@ article.section {
   height: auto !important; }
 
 /*SECTIONS*/
+#subscribeOuter {
+  padding: 100px 1.5rem; }
+
 #subscribeSection {
   padding-top: 200px; }
 
 #subscribe {
-  padding: 100px;
-  max-width: 600px; }
+  max-width: 400px; }
 
 #subscribeButton {
   height: 100%; }

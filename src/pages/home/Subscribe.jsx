@@ -11,11 +11,12 @@ const SubscribeForm = ({ status, message, onValidated }) => {
     });
 
 return (
+  <div id='subscribeOuter' className='is-centered'>
+  <h2 className='subtitle has-text-centered has-text-dark is-size-3-mobile'>
+    <span className="line">interested in &nbsp;</span>
+    <span className="line">learning more?</span>
+  </h2>
   <div className='container is-centered' id='subscribe'>
-    <h2 className='subtitle has-text-centered has-text-dark is-size-3-mobile'>
-      <span className="line">interested in </span>
-      <span className="line">hearing more?</span>
-    </h2>
     <h2 className='has-text-dark'>Your Email</h2>
       {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
       {status === "error" && (
@@ -50,6 +51,7 @@ return (
         </div>
       </div>
     </div>
+  </div>
   );
 };
 
