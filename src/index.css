@@ -312,6 +312,10 @@ article.section {
 #subscribeButton {
   height: 100%; }
 
+#missionStatement {
+  padding-top: 40px;
+  width: 100vw; }
+
 .field.has-addons .control:not(:last-child) {
   width: 100%; }
 
