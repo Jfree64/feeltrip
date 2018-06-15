@@ -241,15 +241,18 @@ span.line {
   justify-content: center; }
 
 q
-.page-header {
-  height: 400px;
-  overflow: hidden;
-  object-fit: cover; }
+img.page-header {
+  height: 400px !important;
+  overflow: hidden !important;
+  object-fit: cover !important; }
 
 /*HERO IMAGE*/
+.hero-body.page-header-title {
+  top: 30vh; }
+
 .page-header-title {
-  position: absolute;
-  top: 30vh;
+  position: relative;
+  top: 200px;
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
