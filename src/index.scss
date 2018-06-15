@@ -78,6 +78,10 @@ $text-grey: #EAEAEA;
   font-size: .8125rem;
 }
 
+.navbar-brand{
+  margin-right:1rem;
+}
+
 .button {
   font-family: 'Gotham', serif;
   font-weight: bolder;
@@ -211,6 +215,7 @@ span.line {
 
 
 .is-tilty-left {
+  padding-top:.5rem;
   transform:skew(0deg,-2.5deg);
 -ms-transform:skew(0deg,-5deg);
 -webkit-transform:skew(0deg,-2.5deg);
@@ -221,6 +226,13 @@ span.line {
 -ms-transform:skew(0deg,5deg);
 -webkit-transform:skew(0deg,2.5deg);
 }
+
+#missionStatement{
+  margin-top: -200px;
+  margin-bottom: -200px;
+  top: 200px;
+}
+
 
 .no-padding-top {
   padding-top: 0px;
@@ -237,7 +249,7 @@ span.line {
 .is-constrained {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1.5rem;
+//  padding: 1.5rem;
 }
 
 .headerImg {
@@ -260,7 +272,7 @@ span.line {
 
 /* GENERAL PAGE */
 .hero-image {
-  height: 80vh;
+  height: 90vh;
   overflow: visible;
   object-fit: cover;
   object-position: center;
@@ -276,6 +288,7 @@ img.page-header {
     height: 400px !important;
     overflow: hidden !important;
     object-fit: cover !important;
+    position: relative;
 }
 
 /*HERO IMAGE*/
@@ -294,7 +307,7 @@ img.page-header {
 
 /*FOOTER*/
 .footer{
-
+  margin-top: 20px;
 }
 
 /*.footer::before {
@@ -338,6 +351,10 @@ article.section {
 
 
 /*SECTIONS*/
+#subscribeSection {
+  padding-top: 200px;
+}
+
 #subscribe {
   padding:100px;
   max-width: 600px;

@@ -60,6 +60,9 @@
   font-weight: bolder;
   font-size: .8125rem; }
 
+.navbar-brand {
+  margin-right: 1rem; }
+
 .button {
   font-family: 'Gotham', serif;
   font-weight: bolder;
@@ -193,6 +196,7 @@ span.line {
   display: inline-block; }
 
 .is-tilty-left {
+  padding-top: .5rem;
   transform: skew(0deg, -2.5deg);
   -ms-transform: skew(0deg, -5deg);
   -webkit-transform: skew(0deg, -2.5deg); }
@@ -202,6 +206,11 @@ span.line {
   -ms-transform: skew(0deg, 5deg);
   -webkit-transform: skew(0deg, 2.5deg); }
 
+#missionStatement {
+  margin-top: -200px;
+  margin-bottom: -200px;
+  top: 200px; }
+
 .no-padding-top {
   padding-top: 0px; }
 
@@ -210,8 +219,7 @@ span.line {
 
 .is-constrained {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 1.5rem; }
+  max-width: 1200px; }
 
 .headerImg {
   padding-bottom: 100px;
@@ -232,7 +240,7 @@ span.line {
 
 /* GENERAL PAGE */
 .hero-image {
-  height: 80vh;
+  height: 90vh;
   overflow: visible;
   object-fit: cover;
   object-position: center; }
@@ -244,7 +252,8 @@ span.line {
 img.page-header {
   height: 400px !important;
   overflow: hidden !important;
-  object-fit: cover !important; }
+  object-fit: cover !important;
+  position: relative; }
 
 /*HERO IMAGE*/
 .hero-body.page-header-title {
@@ -259,6 +268,9 @@ img.page-header {
   text-align: center; }
 
 /*FOOTER*/
+.footer {
+  margin-top: 20px; }
+
 /*.footer::before {
   content: url('./images/headerImg.png');
   width:100%;
@@ -290,6 +302,9 @@ article.section {
   height: auto !important; }
 
 /*SECTIONS*/
+#subscribeSection {
+  padding-top: 200px; }
+
 #subscribe {
   padding: 100px;
   max-width: 600px; }

@@ -26,7 +26,7 @@ class About extends Component {
         return (
           <div>
             <PageHeader color="is-info" title="" img={aboutHeader}>
-              <span className="line">don't just be about it, </span><span className="line">talk about it.</span>
+              <span className="line">don't just be about it,&nbsp; </span><span className="line">talk about it.</span>
             </PageHeader>
             <TheMission />
             <TheRide />

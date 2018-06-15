@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
-const url = "//feeltrip.us18.list-manage.com/subscribe/post?u=e6b85968d1050879c0472e76f&amp;id=9ee0411cac";
-
 const SubscribeForm = ({ status, message, onValidated }) => {
   let email;
   const submit = () =>
@@ -62,7 +60,7 @@ class Subscribe extends Component {
   render() {
     const url = "//feeltrip.us18.list-manage.com/subscribe/post?u=e6b85968d1050879c0472e76f&amp;id=9ee0411cac"
     return (
-      <section className='is-centered has-background-white has-text-dark'>
+      <section id='subscribeSection' className='is-centered has-background-white has-text-dark'>
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (

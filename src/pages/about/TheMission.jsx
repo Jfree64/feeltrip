@@ -9,7 +9,7 @@ const TheMission = () => (
       <div className="column text-is-centered">
         <p>feel trip is a series of rides with one goal - To bring light to mental health issues in an effort to reduce, and eventually eliminate, the surrounding stigma.
 
-As we ride, we share the stories of those directly affected by mental health issues on our blog, capture and share our journey via social media, and raise funds for a chraritable organization.</p>
+Even if you have no personal experience with mental health issues, a quick survey of recent events should clue you into how serious of an issue it is. </p>
       </div>
       <div className="column text-is-centered">
         <p>Our first feel trip takes us across the united states as we fundraise for this year's charitable organization: the National Alliance for Mental Illness (NAMI) Sharing is hard. We challenge ourselves in the hopes that we can inspire others to do the same.</p>
