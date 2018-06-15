@@ -240,7 +240,7 @@ span.line {
 .field.has-addons.flex-middle {
   justify-content: center; }
 
-q
+/*HEADER*/
 img.page-header {
   height: 400px !important;
   overflow: hidden !important;
@@ -251,7 +251,7 @@ img.page-header {
   top: 30vh; }
 
 .page-header-title {
-  position: relative;
+  position: absolute;
   top: 200px;
   width: 100%;
   left: 50%;
