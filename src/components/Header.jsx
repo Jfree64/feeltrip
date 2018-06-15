@@ -43,7 +43,7 @@ class Header extends React.Component {
               <NavLink to="/blog" className="navbar-item navbar-text"> BLOG </NavLink>
 
             <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
-              <div className='button donate'> DONATE </div>
+              <div className='button gradient'> DONATE </div>
             </a>
             </div>
         </div>

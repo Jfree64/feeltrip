@@ -12,7 +12,7 @@ const HeroImage = (props) => (
                   this is a subtitle
                 </h2>
                 <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="is-centered">
-                  <div className='button donate'> DONATE </div>
+                  <div className='button gradient'> DONATE </div>
                 </a>
               </div>
             </div>

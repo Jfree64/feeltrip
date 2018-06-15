@@ -60,7 +60,15 @@
   font-weight: bolder;
   font-size: .8125rem; }
 
-.button.donate {
+.button {
+  font-family: 'Gotham', serif;
+  font-weight: bolder;
+  font-size: .8125rem;
+  font-size: .8125rem;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.button.gradient {
   color: #ffffff;
   background: #FF2A93;
   /* Old browsers */
@@ -79,12 +87,11 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */
   /* Old browsers */
-  border: 0px;
   height: 2.5rem;
-  font-size: .8125rem;
+  y: 20;
+  border: 0px;
   padding-left: 2rem;
-  padding-right: 2rem;
-  y: 20; }
+  padding-right: 2rem; }
 
 .donate-float {
   position: absolute;
@@ -230,15 +237,19 @@ span.line {
   object-fit: cover;
   object-position: center; }
 
-/*HEADER*/
+.field.has-addons.flex-middle {
+  justify-content: center; }
+
+q
 .page-header {
   height: 400px;
   overflow: hidden;
   object-fit: cover; }
 
+/*HERO IMAGE*/
 .page-header-title {
   position: absolute;
-  top: 160px;
+  top: 30vh;
   width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -275,6 +286,17 @@ article.section {
 .sponsorImg {
   height: auto !important; }
 
+/*SECTIONS*/
+#subscribe {
+  padding: 100px;
+  max-width: 600px; }
+
+#subscribeButton {
+  height: 100%; }
+
+.field.has-addons .control:not(:last-child) {
+  width: 100%; }
+
 ::selection {
   background: #FF2A93;
   /* WebKit/Blink Browsers */ }
@@ -282,6 +304,14 @@ article.section {
 ::-moz-selection {
   background: #FF2A93;
   /* Gecko Browsers */ }
+
+button:hover {
+  -webkit-animation: party 2s;
+  -moz-animation: party 2s;
+  animation: party 2s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite; }
 
 a:hover {
   -webkit-animation: party 2s;
