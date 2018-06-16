@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logotype from '../images/headerLogotype.png';
+import logotype from '../images/feeltrip-logotype-black.png';
 import logo from '../images/headerLogo.png';
 
 class Header extends React.Component {
