@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
+import Form from './donate/Form.jsx'
+
 class Donate extends Component {
     render() {
-        return (
+        return(
           <div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          GIVE US YOUR MONEY
+            <Form />
           </div>
-        )
+        );
     }
 }
 export default Donate;
+
+
+
+
+{/* window.ddDonateOptions = {
+        isEmbedded: 1,
+        palette: 'light',
+        donationType: 'event',
+        eventID: 501
+      } */}
