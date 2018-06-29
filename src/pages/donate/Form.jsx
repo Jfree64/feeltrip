@@ -1,26 +1,52 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-class Form extends Component {
-
+class DonateForm extends React.Component {
   componentDidMount() {
-    const script = document.createElement('script');
-    script.setAttribute(
-      'src',
-      'https://ifundraise.nami.org/resources/js/donordrive.donate.js');
-    script.addEventListener('load', () => {
-    });
-    document.body.appendChild(script);
+    this.ifr.onload = () => {
+      this.ifr.contentWindow.postMessage('hello', '*');
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    for (const [objectid, liveData] of Object.entries(nextProps.objectsLive)) {
+      const prevOn = this.props.objectsLive[objectid] ? this.props.objectsLive[objectid].on : null;
+      if (prevOn !== liveData.on) {
+        this.ifr.contentWindow.postMessage({ event: 'onoff', object: objectid, value: liveData.on }, '*');
+      }
+    }
+  }
+
+  shouldComponentUpdate() {
+    return false;
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('message', this.handleFrameTasks);
+  }
+
+  sendToFrame(data) {
+    if(this.ifr) this.ifr.contentWindow.postMessage(data, '*');
+  }
+
+  handleFrameTasks = (e) => {
+    if (e.data.type === 'bookmark') {
+      this.sendToFrame({ event: 'bookmark', data: window.location.hash ? window.location.hash.substr(1) : null });
+    }
   }
 
   render() {
     return (
       <div>
-        <div id="apply_form">
-          <a name="form" id="formAnchor"></a>
-        </div>
+        <iframe
+          sandbox="allow-scripts"
+          style={{ width: '100%' }}
+          src="https://ifundraise.nami.org/index.cfm?fuseaction=donateSimple.event&isEmbedded=1&donRef=http%3A%2F%2Fifundraise.nami.org%2FddTest.html&palette=light&eventID=501"
+          ref={(f) => { this.ifr = f; }}
+        />
       </div>
     );
   }
 }
 
-export default Form
+export default DonateForm;
