@@ -39,12 +39,12 @@ class Header extends React.Component {
           <div className="navbar-end">
               <NavLink to="/" className="navbar-item navbar-text" > HOME </NavLink>
               <NavLink to="/about" className="navbar-item navbar-text" > ABOUT </NavLink>
-              <NavLink to="/donate" className="navbar-item navbar-text"> MAP </NavLink>
+              <NavLink to="/coming-soon" className="navbar-item navbar-text"> MAP </NavLink>
               <NavLink to="/blog" className="navbar-item navbar-text"> BLOG </NavLink>
 
-            <a href="https://ifundraise.nami.org/index.cfm?fuseaction=donate.personalCampaign&participantID=1523" className="navbar-item">
+            <NavLink to="/donate" className="navbar-item">
               <div className='button gradient'> DONATE </div>
-            </a>
+            </NavLink>
             </div>
         </div>
       </nav>
