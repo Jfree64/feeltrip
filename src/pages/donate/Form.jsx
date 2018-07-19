@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class DonateForm extends React.Component {
-  componentDidMount() {
+/*  componentDidMount() {
     this.ifr.onload = () => {
       this.ifr.contentWindow.postMessage('hello', '*');
     };
@@ -33,7 +33,7 @@ class DonateForm extends React.Component {
     if (e.data.type === 'bookmark') {
       this.sendToFrame({ event: 'bookmark', data: window.location.hash ? window.location.hash.substr(1) : null });
     }
-  }
+  } */
 
   render() {
     return (
@@ -41,7 +41,7 @@ class DonateForm extends React.Component {
         <iframe
           sandbox="allow-scripts"
           style={{ width: '100%', height: '100vh'}}
-          src="https://ifundraise.nami.org/index.cfm?fuseaction=donateSimple.participant&isEmbedded=0&donRef=http%3A%2F%2Fifundraise.nami.org%2FddTest.html&palette=dark&participantID=1523"
+          src="https://ifundraise.nami.org/index.cfm?fuseaction=donateSimple.participant&isEmbedded=1&donRef=http%3A%2F%2Fifundraise.nami.org%2FddTest.html&palette=dark&participantID=1523"
           ref={(f) => { this.ifr = f; }}
         />
       </div>
