@@ -41,7 +41,7 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "fuckitshipit": "set HTTPS=true npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
+    "fuckitshipit": "npm run build && s3cmd sync build/* s3://feeltrip.us && echo '🚀  Deployed my dude!'"
   },
   "devDependencies": {
     "chai": "^4.1.2",
