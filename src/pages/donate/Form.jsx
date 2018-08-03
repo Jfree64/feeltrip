@@ -39,7 +39,6 @@ class DonateForm extends React.Component {
     return (
       <div>
         <iframe
-          sandbox="allow-scripts"
           style={{ width: '100%', height: '100vh'}}
           src="https://ifundraise.nami.org/index.cfm?fuseaction=donateSimple.participant&isEmbedded=1&donRef=http%3A%2F%2Fifundraise.nami.org%2FddTest.html&palette=dark&participantID=1523"
           ref={(f) => { this.ifr = f; }}
