@@ -13,6 +13,11 @@ const Head = () => (
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff2a93" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:type" content={props.type} />
+    <meta property="og:title" content={props.title} />
+    <meta property="og:description" content={props.desc} />
+    <meta property="og:image" content={ogImg} />
   </Helmet>
 )
 

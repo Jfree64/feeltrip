@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Head />
+        <Head ogUrl='/aaa' cookies=/>
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
