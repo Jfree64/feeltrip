@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom'
 
-import Head from './components/Head.jsx'
+import Head from './components/head/index'
 
-import Header from './components/Header.jsx';
-import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
-import LiveMap from './pages/LiveMap.jsx';
-import Blog from './pages/Blog.jsx';
-import BlogPost from './pages/blog/BlogPost.jsx';
-import Donate from './pages/Donate.jsx';
-import Footer from './components/Footer.jsx';
-import ComingSoon from './pages/ComingSoon.jsx';
-import NoMatch from './pages/NoMatch.jsx';
+import Header from './components/header/index';
+import Home from './pages/home/index';
+import About from './pages/about/index';
+import LiveMap from './pages/liveMap/index';
+import Blog from './pages/blog/index';
+import BlogPost from './pages/blog/blogPost/index';
+import Donate from './pages/donate/index';
+import Footer from './components/footer/index';
+import ComingSoon from './pages/comingSoon/index';
+import NoMatch from './pages/noMatch/index';
 
 import './index.scss';
 
@@ -20,7 +20,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Head ogUrl='/aaa' cookies=/>
+        <Head ogUrl='/aaa' ogImg=''/>
         <Header />
         <Switch>
           <Route exact path='/' component={Home}/>
