@@ -14,7 +14,7 @@ import Footer from './components/footer/index';
 import ComingSoon from './pages/comingSoon/index';
 import NoMatch from './pages/noMatch/index';
 
-import './index.scss';
+import './index.css';
 
 class App extends Component {
   render() {

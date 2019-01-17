@@ -1,6 +1,5 @@
 /*MIXINS AND CUSTOM SCSS*/
 @import url(~bulma/css/bulma.css);
-@import url(~bulma/css/bulma.css);
 @font-face {
   font-family: 'GT Sectra';
   font-style: normal;
@@ -343,5 +342,12 @@ a:hover {
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
+
+.progress-bar {
+  -webkit-appearance: none;
+  appearance: none; }
+
+progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, #FF2A93, #7DE0E6); }
 
 /*IMPORT THE REST OF THE FUCKING OWL*/

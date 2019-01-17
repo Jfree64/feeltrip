@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Progress from './progress'
 import Form from './form'
 
 class Donate extends Component {
     render() {
         return(
           <div>
+            <Progress />
             <Form />
           </div>
         );

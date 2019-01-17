@@ -404,7 +404,17 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
+.progress-bar {
+-webkit-appearance: none;
+ appearance: none;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(left, #FF2A93, #7DE0E6);
+}
+
+$progress-value-background-color: pink;
 
 /*IMPORT THE REST OF THE FUCKING OWL*/
-@import '~bulma/css/bulma.css';
 @import '~bulma/css/bulma.css';
