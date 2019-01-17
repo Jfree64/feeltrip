@@ -1,0 +1,25 @@
+@import "../../../../style/_variables.scss";
+
+progress[value]::-webkit-progress-value {
+  @include ftGradientBG;
+  border-radius: 100px;
+}
+
+.range-low{
+  color: #7DE0E6;
+  text-align: left;
+}
+
+.range-high{
+  color: #FF2A93;
+  text-align: right;
+}
+
+.progressBar{
+  //  width: calc(100% - 80px);
+  margin: auto;
+}
+
+.range.columns:last-child{
+  margin-bottom: 20px !important;
+}

@@ -1,0 +1,65 @@
+/*
+ * VARIABLES
+ *
+ * Global sizes and colors that can be used in every component
+ *
+ */
+
+ @mixin gradientBG($from, $to){
+   background: $from; /* Old browsers */
+   background: -moz-linear-gradient(to right, $from, $to); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, right top, color-stop(20%,$from), color-stop(80%,$to)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(to bottom right, $from 20%,$to 80%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(to bottom right, $from 20%,$to 80%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(to bottom right, $from 20%,$to 80%); /* IE10+ */
+   background: linear-gradient(to bottom right, $from 20%,$to 80%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+ }
+
+ $ft-blue: #3DD9FF;
+
+ $ft-pink: #FF0F69;
+
+ @mixin ftGradientBG(){
+   @include gradientBG($ft-pink, $ft-blue); /* Old browsers */
+ }
+
+$helvetica-neue: "helvetica-neue", helvetica, arial, sans-serif;
+
+
+/* ============================================================ *\
+|* Colors
+\* ============================================================ */
+
+
+
+/* ============================================================ *\
+|* Breakpoints (bp)
+\* ============================================================ */
+
+$bp-mobile:            450px;
+$bp-mobile-large:      640px;
+$bp-tablet-small:      720px;
+$bp-tablet:            1000px;
+$bp-monitor-small:     1200px;
+$bp-monitor-medium:    1400px;
+
+/* ============================================================ *\
+ * Lengths
+\* ============================================================ */
+
+$h1-mobile:           12vw;
+$h2-mobile:           10.4vw;
+$h3-mobile:           8.1vw;
+$h4-mobile:           7vw;
+$h5-mobile:           6vw;
+$h6-mobile:           5vw;
+$p-mobile:            4vw;
+
+$h1:                  3rem;
+$h2:                  2.5rem;
+$h3:                  2;
+$h4:                  0.813rem;
+$h5:                  27px;
+$h6:                  22px;
+$p:                   1.125px;

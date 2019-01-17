@@ -1,33 +1,32 @@
-/*MIXINS AND CUSTOM SCSS*/
-@mixin gradientBG($from, $to){
-    background: $from; /* Old browsers */
-    background: -moz-linear-gradient(to right, $from, $to); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$from), color-stop(100%,$to)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(to bottom right, $from 0%,$to 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(to bottom right, $from 0%,$to 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(to bottom right, $from 0%,$to 100%); /* IE10+ */
-    background: linear-gradient(to bottom right, $from 0%,$to 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
-}
+/*
+ * App Style
+ *
+ * The base style for the application.
+ *
+ */
+@charset "utf-8/index";
 
-@mixin ftGradientBG(){
-  @include gradientBG(#FF2A93, #7DE0E6); /* Old browsers */
-}
+@import '_variables.scss';
+//@import '_base.scss';
+//@import '_typeography.scss';
+//@import '_input.scss';
+
+/*MIXINS AND CUSTOM SCSS*/
 
 @font-face {
   font-family: 'GT Sectra';
   font-style: normal;
   font-weight: regular;
-  src: url('./fonts/GT-Sectra-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/GT-Sectra-Regular.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/GT-Sectra-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/GT-Sectra-Regular.woff') format('woff'), /* Modern Browsers */
 }
 
 @font-face {
   font-family: 'GT Sectra';
   font-style: italic;
   font-weight: bold;
-  src: url('./fonts/GT-Sectra-Fine-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('./fonts/GT-Sectra-Fine-Bold-Italic.woff') format('woff'), /* Modern Browsers */
+  src: url('../fonts/GT-Sectra-Fine-Bold-Italic.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/GT-Sectra-Fine-Bold-Italic.woff') format('woff'), /* Modern Browsers */
 }
 
 @font-face {
@@ -35,8 +34,8 @@
   font-style: normal;
   font-weight: bolder;
   src: local('Gotham'), local('gotham'),
-       url('./fonts/Gotham-Medium.otf') format('opentype'), /* Safari, Android, iOS */
-       url('./fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/Gotham-Medium.otf') format('opentype'), /* Safari, Android, iOS */
+  url('../fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
 }
 
 @-webkit-keyframes fontfix {
@@ -46,22 +45,22 @@
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes party {
-    0%   {color: #FF2A93;}
-    50%   {color: #7DE0E6;}
-    100%   {color: #FF2A93;}
+  0%   {color: $ft-pink;}
+  50%   {color: $ft-blue;}
+  100%   {color: $ft-pink;}
 }
 
 @-moz-keyframes party {
-    0%   {color: #FF2A93;}
-    50%   {color: #7DE0E6;}
-    100%   {color: #FF2A93;}
+  0%   {color: $ft-pink;}
+  50%   {color: $ft-blue;}
+  100%   {color: $ft-pink;}
 }
 
 /* Standard syntax */
 @keyframes party {
-    0%   {color: #FF2A93;}
-    50%   {color: #7DE0E6;}
-    100%   {color: #FF2A93;}
+  0%   {color: $ft-pink;}
+  50%   {color: $ft-blue;}
+  100%   {color: $ft-pink;}
 }
 
 $text-grey: #EAEAEA;
@@ -115,7 +114,7 @@ $text-grey: #EAEAEA;
   margin-top: 10px;
   position: absolute;
   left: 50%; /* Start at 50% of browser window */
-    margin-left: -18px;
+  margin-left: -18px;
 }
 
 
@@ -149,7 +148,7 @@ body {
 }
 
 h1.title {
-  color: #FF2A93;
+  color: $ft-pink;
   font-size: 3rem;
   font-family: 'GT Sectra', serif;
   font-weight: regular;
@@ -169,14 +168,14 @@ h3.question {  color: white;
   font-weight: bold;
   font-style: italic;}
 
-h3.label {
-  color: black;
-  font-size: 1rem;
-  font-family: 'Gotham', serif;
-  font-weight: bolder;
-}
+  h3.label {
+    color: black;
+    font-size: 1rem;
+    font-family: 'Gotham', serif;
+    font-weight: bolder;
+  }
 
-/*h1 span {
+  /*h1 span {
   color: black;
   background-color: white;
   padding: 4px 10px;
@@ -184,10 +183,10 @@ h3.label {
 }
 
 h2 span {
-  color: black;
-  background-color: white;
-  padding: 4px 10px;
-  margin: 10px 0px;
+color: black;
+background-color: white;
+padding: 4px 10px;
+margin: 10px 0px;
 }*/
 
 p {
@@ -198,7 +197,7 @@ p {
 }
 
 a {
-  color: #FF2A93;
+  color: $ft-pink;
 }
 
 .has-text-link {
@@ -217,14 +216,14 @@ span.line {
 .is-tilty-left {
   padding-top:.5rem;
   transform:skew(0deg,-2.5deg);
--ms-transform:skew(0deg,-5deg);
--webkit-transform:skew(0deg,-2.5deg);
+  -ms-transform:skew(0deg,-5deg);
+  -webkit-transform:skew(0deg,-2.5deg);
 }
 
 .is-tilty-right {
   transform:skew(0deg,2.5deg);
--ms-transform:skew(0deg,5deg);
--webkit-transform:skew(0deg,2.5deg);
+  -ms-transform:skew(0deg,5deg);
+  -webkit-transform:skew(0deg,2.5deg);
 }
 
 #missionStatement{
@@ -249,7 +248,7 @@ span.line {
 .is-constrained {
   margin: 0 auto;
   max-width: 1200px;
-//  padding: 1.5rem;
+  //  padding: 1.5rem;
 }
 
 .headerImg {
@@ -285,10 +284,10 @@ span.line {
 
 /*HEADER*/
 img.page-header {
-    height: 400px !important;
-    overflow: hidden !important;
-    object-fit: cover !important;
-    position: relative;
+  height: 400px !important;
+  overflow: hidden !important;
+  object-fit: cover !important;
+  position: relative;
 }
 
 /*HERO IMAGE*/
@@ -311,9 +310,9 @@ img.page-header {
 }
 
 /*.footer::before {
-  content: url('./images/headerImg.png');
-  width:100%;
-  height:40px;
+content: url('./images/headerImg.png');
+width:100%;
+height:40px;
 }*/
 
 /* BLOG*/
@@ -323,9 +322,9 @@ article {
 }
 
 .blog-item-header {
-    height: 400px;
-    overflow: hidden;
-    object-fit: cover;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .blog-post-header {
@@ -380,10 +379,10 @@ article.section {
 
 
 ::selection {
-  background: #FF2A93; /* WebKit/Blink Browsers */
+  background: $ft-pink; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #FF2A93; /* Gecko Browsers */
+  background: $ft-pink; /* Gecko Browsers */
 }
 
 button:hover {
@@ -404,17 +403,14 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
-.progress-bar {
--webkit-appearance: none;
- appearance: none;
+.progress {
+  -webkit-appearance: none;
+  appearance: none;
+  width: calc(100%-600px);
+  margin-bottom: 1rem !important;
 }
 
-progress[value]::-webkit-progress-value {
-  background-image:
-	   -webkit-linear-gradient(left, #FF2A93, #7DE0E6);
-}
 
-$progress-value-background-color: pink;
 
 /*IMPORT THE REST OF THE FUCKING OWL*/
 @import '~bulma/css/bulma.css';
