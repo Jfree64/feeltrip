@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logotype from '../../images/feeltrip-logotype-black.png';
-import logo from '../../images/headerLogo.png';
+import logotype from '../../images/feeltrip-logotype-black@2x.png';
+import logo from '../../images/feeltrip-logo@2x.png';
 
 class Header extends React.Component {
 
@@ -39,7 +39,7 @@ class Header extends React.Component {
           <div className="navbar-end">
               <NavLink to="/" className="navbar-item navbar-text" > HOME </NavLink>
               <NavLink to="/about" className="navbar-item navbar-text" > ABOUT </NavLink>
-              <NavLink to="/coming-soon" className="navbar-item navbar-text"> MAP </NavLink>
+              <NavLink to="/map" className="navbar-item navbar-text"> MAP </NavLink>
               <NavLink to="/blog" className="navbar-item navbar-text"> BLOG </NavLink>
 
             <NavLink to="/donate" className="navbar-item">

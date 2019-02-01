@@ -30,6 +30,7 @@ class App extends Component {
           <Route path='/blog/:blogPost' component={BlogPost}/>
           <Route exact path='/donate' component={Donate}/>
           <Route path='/coming-soon' component={ComingSoon}/>
+          <Route path='/map' component={LiveMap}/>
           <Route component={NoMatch} />
         </Switch>
         <Footer />

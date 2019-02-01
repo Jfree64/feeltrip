@@ -7,7 +7,7 @@ import ImageTiles from './imageTiles';
 import Subscribe from './subscribe';
 
 import heroImage from '../../images/headerImg.png'
-import logotypeMain from '../../images/feeltrip-logotype-black@2x.png';
+import logotypeMain from '../../images/feeltrip-logotype-black.svg';
 
 class Home extends Component {
     render() {

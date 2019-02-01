@@ -1,6 +1,8 @@
 {
-  "main.js": "static/js/main.cfbcda19.js",
-  "main.js.map": "static/js/main.cfbcda19.js.map",
+  "main.css": "static/css/main.c334d128.css",
+  "main.css.map": "static/css/main.c334d128.css.map",
+  "main.js": "static/js/main.e33e1c92.js",
+  "main.js.map": "static/js/main.e33e1c92.js.map",
   "static/media/404.png": "static/media/404.ce1ff143.png",
   "static/media/GT-Sectra-Fine-Bold-Italic.ttf": "static/media/GT-Sectra-Fine-Bold-Italic.3b0eeb70.ttf",
   "static/media/GT-Sectra-Fine-Bold-Italic.woff": "static/media/GT-Sectra-Fine-Bold-Italic.4e92bb16.woff",
@@ -10,6 +12,7 @@
   "static/media/Gotham-Medium.woff": "static/media/Gotham-Medium.74f30359.woff",
   "static/media/aboutHeader.png": "static/media/aboutHeader.d6b31c05.png",
   "static/media/blogHeader.png": "static/media/blogHeader.4cf88e51.png",
+  "static/media/feeltrip-logotype-black.svg": "static/media/feeltrip-logotype-black.e4ae5ccc.svg",
   "static/media/headerImg.png": "static/media/headerImg.2a8f3746.png",
   "static/media/sponsorChela.png": "static/media/sponsorChela.6b64979d.png"
 }
