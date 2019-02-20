@@ -10,9 +10,9 @@ const HeroImage = (props) => (
                 <h2 className="is-size-1 is-size-3-mobile subtitle has-text-dark">
                   stigma ends here
                 </h2>
-                <NavLink to="/donate" className="is-centered">
-                  <div className='button gradient'> DONATE </div>
-                </NavLink>
+                <div  className="is-centered">
+                  <a href="https://donate.nami.org/feeltrip" className='button gradient'> DONATE </a>
+                </div>
               </div>
             </div>
           </section>

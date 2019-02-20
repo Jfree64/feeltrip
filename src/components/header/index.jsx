@@ -42,9 +42,9 @@ class Header extends React.Component {
               <NavLink to="/map" className="navbar-item navbar-text"> MAP </NavLink>
               <NavLink to="/blog" className="navbar-item navbar-text"> BLOG </NavLink>
 
-            <NavLink to="/donate" className="navbar-item">
-              <div className='button gradient'> DONATE </div>
-            </NavLink>
+            <div className="navbar-item">
+              <a href="https://donate.nami.org/feeltrip" className='button gradient'> DONATE </a>
+            </div>
             </div>
         </div>
       </nav>
