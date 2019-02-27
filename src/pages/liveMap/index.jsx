@@ -37,6 +37,8 @@ class LiveMap extends Component {
 
       });
 
+    this.map.addControl(new mapboxgl.FullscreenControl());
+
 }
 
   componentWillUnmount() {

@@ -65,6 +65,9 @@
 
 $text-grey: #EAEAEA;
 
+/*IMPORT THE REST OF THE FUCKING OWL*/
+@import '~bulma/css/bulma.css';
+
 /*HEADER NAVIGATION*/
 
 .navbar {
@@ -409,8 +412,3 @@ a:hover {
   width: calc(100%-600px);
   margin-bottom: 1rem !important;
 }
-
-
-
-/*IMPORT THE REST OF THE FUCKING OWL*/
-@import '~bulma/css/bulma.css';
