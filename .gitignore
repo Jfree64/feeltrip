@@ -39,3 +39,5 @@ Thumbs.db
 # CSS #
 ######################
 src/**/*.css
+node_modules
+node_modules

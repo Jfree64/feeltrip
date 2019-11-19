@@ -3,7 +3,7 @@ import HeroImage from './heroImage';
 import MissionStatement from './missionStatement';
 import Sponsors from './sponsors';
 import Upcoming from './upcoming';
-import ImageTiles from './imageTiles';
+import Instagram from './instagram';
 import Subscribe from './subscribe';
 
 import heroImage from '../../images/headerImg.png'
@@ -16,8 +16,8 @@ class Home extends Component {
             <HeroImage img={heroImage} logo={logotypeMain} />
             <MissionStatement />
             {/*<Sponsors />
-            <Upcoming />
-            <ImageTiles /> */}
+            <Upcoming /> */}
+            <Instagram />
             <Subscribe />
           </div>
         )

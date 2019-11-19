@@ -7,42 +7,42 @@ import { Loader } from '../../../components/Loader'
 
 const disqusShortname = 'feeltripride';
 
-const disqusConfig = (props) => {
+const disqusConfig = ({ path, title}) => {
   return{
-    url: `http:feeltrip.us/blog/${props.path}`,
-    identifier: props.path,
-    title: props.title,
+    url: `http:feeltrip.us/blog/${path}`,
+    identifier: path,
+    title: title,
   }
 }
 
-class BlogPost extends React.Component {
-  render() {
-    const { location } =  this.props
+const BlogPost = ( props ) => {
+console.log('hi')
+  const { location } =  this.props
+  console.log(location)
+  if (!location) { console.log('ah shit') }
+  return <Loader className="has-text-primary" />
+  console.log(location)
+  const { props: data } = location.state
 
-    if (!location) return <Loader className="has-text-primary" />
-
-    const { props: data } = location.state
-
-    return (
-      <article>
-        <section className="hero is-medium is-primary is-bold">
-        <img
-          className="blog-post-header"
-          src={data.titleImage.fields.file.url}
-          alt=""
+  return (
+    <article>
+      <section className="hero is-medium is-primary is-bold">
+      <img
+        className="blog-post-header"
+        src={data.titleImage.fields.file.url}
+        alt=""
+      />
+      </section>
+      <PageContent>
+        <BlogNav date={data.date} to="/blog" />
+        <BlogContent {...data } />
+        <Disqus.DiscussionEmbed
+          shortname={disqusShortname}
+          config={disqusConfig}
         />
-        </section>
-        <PageContent>
-          <BlogNav date={data.date} to="/blog" />
-          <BlogContent {...data } />
-          <Disqus.DiscussionEmbed
-            shortname={disqusShortname}
-            config={disqusConfig}
-          />
-        </PageContent>
-      </article>
-    )
-  }
+      </PageContent>
+    </article>
+  )
 }
 
 export default BlogPost

@@ -21,3 +21,8 @@ export function loadBlog() {
       })
   }
 }
+
+
+/*const sortByKey = key => (a, b) => a[key] > b[key]
+const sorted = state.slice().sort(sortByKey('name'))
+console.log(`state=${JSON.stringify(state)}\nsorted=${JSON.stringify(sorted)}`)*/

@@ -1,4 +1,4 @@
-/*
+ /*
  * App Style
  *
  * The base style for the application.
@@ -216,22 +216,7 @@ span.line {
 }
 
 
-.is-tilty-left {
-  padding-top:.5rem;
-  transform:skew(0deg,-2.5deg);
-  -ms-transform:skew(0deg,-5deg);
-  -webkit-transform:skew(0deg,-2.5deg);
-}
-
-.is-tilty-right {
-  transform:skew(0deg,2.5deg);
-  -ms-transform:skew(0deg,5deg);
-  -webkit-transform:skew(0deg,2.5deg);
-}
-
 #missionStatement{
-  margin-top: -200px;
-  margin-bottom: -200px;
   top: 200px;
 }
 
@@ -355,10 +340,6 @@ article.section {
 
 #subscribeOuter {
   padding:100px 1.5rem;
-}
-
-#subscribeSection {
-  padding-top: 200px;
 }
 
 #subscribe {

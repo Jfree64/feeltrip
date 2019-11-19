@@ -21,6 +21,7 @@ import {Evented} from './util/evented';
 import config from './util/config';
 import {setRTLTextPlugin} from './source/rtl_text_plugin';
 import WorkerPool from './util/worker_pool';
+import {clearTileCache} from './util/tile_request_cache';
 
 const exported = {
     version,
@@ -57,10 +58,11 @@ const exported = {
     set accessToken(token: string) {
         config.ACCESS_TOKEN = token;
     },
+
     /**
      * Gets and sets the map's default API URL for requesting tiles, styles, sprites, and glyphs
      *
-     * @var {string} url
+     * @var {string} baseApiUrl
      * @example
      * mapboxgl.baseApiUrl = 'https://api.mapbox.com';
      */
@@ -72,6 +74,15 @@ const exported = {
         config.API_URL = url;
     },
 
+    /**
+     * Gets and sets the number of web workers instantiated on a page with GL JS maps.
+     * By default, it is set to half the number of CPU cores (capped at 6).
+     * Make sure to set this property before creating any map instances for it to have effect.
+     *
+     * @var {string} workerCount
+     * @example
+     * mapboxgl.workerCount = 2;
+     */
     get workerCount(): number {
         return WorkerPool.workerCount;
     },
@@ -80,12 +91,32 @@ const exported = {
         WorkerPool.workerCount = count;
     },
 
+    /**
+     * Gets and sets the maximum number of images (raster tiles, sprites, icons) to load in parallel,
+     * which affects performance in raster-heavy maps. 16 by default.
+     *
+     * @var {string} maxParallelImageRequests
+     * @example
+     * mapboxgl.maxParallelImageRequests = 10;
+     */
     get maxParallelImageRequests(): number {
         return config.MAX_PARALLEL_IMAGE_REQUESTS;
     },
 
     set maxParallelImageRequests(numRequests: number) {
         config.MAX_PARALLEL_IMAGE_REQUESTS = numRequests;
+    },
+
+    /**
+     * Clears browser storage used by this library. Using this method flushes the tile
+     * cache that is managed by this library. Tiles may still be cached by the browser
+     * in some cases.
+     *
+     * @function clearStorage
+     * @param {Function} callback Called with an error argument if there is an error.
+     */
+    clearStorage(callback?: (err: ?Error) => void) {
+        clearTileCache(callback);
     },
 
     workerUrl: ''
@@ -114,7 +145,7 @@ const exported = {
 
 /**
  * Sets the map's [RTL text plugin](https://www.mapbox.com/mapbox-gl-js/plugins/#mapbox-gl-rtl-text).
- * Necessary for supporting languages like Arabic and Hebrew that are written right-to-left.
+ * Necessary for supporting the Arabic and Hebrew languages, which are written right-to-left. Mapbox Studio loads this plugin by default.
  *
  * @function setRTLTextPlugin
  * @param {string} pluginURL URL pointing to the Mapbox RTL text plugin source.

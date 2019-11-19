@@ -1,0 +1,9 @@
+#instafeed {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.insta-post {
+  flex: 1 0 calc(33.333% - 20px);
+  margin: 0 5px 5px 5px;
+}
