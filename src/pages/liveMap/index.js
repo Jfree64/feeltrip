@@ -14,11 +14,12 @@ class LiveMap extends Component {
 
   componentDidMount() {
     axios.get('https://www.strava.com/api/v3/athletes/13604830/activities?after=1558760400&per_page=100', {
-      headers: { Authorization: "Bearer b4de1943ce3d12fca81a8759905968e7f26914a2"}})
+      headers: { Authorization: "Bearer 7d4f8177c26a33c4fb5210a421256c920a1b97ee"}})
   .then((response) => {
     // handle success
     const routes = response.data.map(route => polyline.toGeoJSON(route.map.summary_polyline));
     this.setState({routes: routes})
+    console.log(routes)
   })
   .catch((error) => {
     // handle error
