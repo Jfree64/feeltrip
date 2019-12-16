@@ -44,21 +44,13 @@ class LiveMap extends Component {
        source: {
          type: 'vector',
          url: 'mapbox://jfree64.6c9mjnun',
-         lineMetrics: true,
+         lineMetrics: true
        },
        "source-layer": "line",
        paint: {
            "line-color": "#FF2A93",
            "line-width": 3,
-           'line-gradient': [
-            'interpolate',
-            ['linear'],
-            ['line-progress'],
-            0,
-            'red',
-            1,
-            'blue'
-          ]
+
        },
        "layout": {
            "line-join": "round",
@@ -77,7 +69,6 @@ class LiveMap extends Component {
               properties: {},
               geometry: route
             }
-
           },
           layout: {
           "line-join": "round",
