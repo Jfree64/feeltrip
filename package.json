@@ -15,7 +15,6 @@
     "moment": "^2.24.0",
     "node-sass": "^4.13.0",
     "npm-run-all": "^4.1.5",
-    "nvm": "0.0.4",
     "react": "16.8.6",
     "react-bulma-components": "^1.5.0",
     "react-dom": "^16.12.0",
@@ -32,20 +31,14 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-immutable-state-invariant": "^2.1.0",
     "redux-thunk": "^2.3.0",
-    "s3cmd": "^1.1.0",
-    "sass": "^1.23.7",
-    "sass-loader": "^7.3.1",
-    "styled-components": "^3.4.10",
-    "yarn": "^1.21.1"
+    "styled-components": "^3.4.10"
   },
   "scripts": {
-    "start-js": "react-scripts start",
-    "start": "PORT=6969 npm-run-all -p start-js",
-    "build-js": "react-scripts build",
-    "build": "npm-run-all build-js && say 'Build failed successfully!'",
+    "start": "PORT=6969 react-scripts start",
+    "build": "react-scripts build && say 'Build failed successfully!'",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "fuckitshipit": "npm run build && s3cmd sync build/* s3://feeltrip.us && say '🚀  Deployed my dude!'",
+    "fuckitshipit": "git commit . && git push && say '🚀  Deployed my dude!'",
     "lgtb": "say 'lets get this bread'",
     "buildfail": "echo '🛠  Build failed successfully!'"
   },
