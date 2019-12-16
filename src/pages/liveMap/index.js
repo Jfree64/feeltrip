@@ -40,17 +40,25 @@ class LiveMap extends Component {
       //add the expected route
       this.map.addLayer({
        id: "planned-route",
-       lineMetrics: true,
        type: "line",
        source: {
-           type: 'vector',
-           url: 'mapbox://jfree64.6c9mjnun'
+         type: 'vector',
+         url: 'mapbox://jfree64.6c9mjnun',
+         lineMetrics: true,
        },
        "source-layer": "line",
        paint: {
            "line-color": "#FF2A93",
            "line-width": 3,
-
+           'line-gradient': [
+            'interpolate',
+            ['linear'],
+            ['line-progress'],
+            0,
+            'red',
+            1,
+            'blue'
+          ]
        },
        "layout": {
            "line-join": "round",
