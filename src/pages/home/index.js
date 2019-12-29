@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HeroImage from './heroImage';
 import MissionStatement from './missionStatement';
-import Sponsors from './sponsors';
+import { Sponsors } from './sponsors';
 import Upcoming from './upcoming';
 import Instagram from './instagram';
 import Subscribe from './subscribe';
