@@ -13,7 +13,7 @@ const SubscribeForm = ({ status, message, onValidated }) => {
 return (
   <div id='subscribeOuter' className='is-centered'>
   <h2 className='subtitle has-text-centered has-text-dark is-size-3-mobile'>
-    <span className="line">interested in&nbsp;</span>
+    <span className="line">interested in &nbsp;</span>
     <span className="line">learning more?</span>
   </h2>
   <div className='container is-centered' id='subscribe'>
