@@ -4,6 +4,32 @@
 }
 
 .insta-post {
-  flex: 1 0 calc(33.333% - 20px);
+  flex: 1 0 calc(25% - 25px);
   margin: 0 5px 5px 5px;
+  img {
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .insta-post {
+    flex: 1 0 calc(33.333% - 20px);
+    margin: 0 5px 5px 5px;
+    img {
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .insta-post {
+    flex: 1 0 calc(50% - 15px);
+    margin: 0 5px 5px 5px;
+    img {
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
 }

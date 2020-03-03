@@ -28,7 +28,7 @@ const Instagram = () => {
             <p>We're on the road! Click any of the photos below to read the day's story on instagram. </p>
             <br/><br/>
           </div>
-      ``</div>
+        </div>
       </div>
         <div id="instafeed" />
       </section>
