@@ -6,7 +6,7 @@ import Upcoming from './upcoming';
 import Instagram from './instagram';
 import Subscribe from './subscribe';
 
-import heroImage from '../../images/headerImg.png'
+import heroImage from 'images/headerImg.png'
 import logotypeMain from '../../images/feeltrip-logotype-black.svg';
 
 class Home extends Component {

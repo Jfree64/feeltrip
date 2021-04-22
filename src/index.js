@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import ReactGA from 'react-ga';
 
 // Redux Store
@@ -25,4 +24,3 @@ ReactDOM.render((
     </BrowserRouter>
   </Provider>
 ), document.getElementById('root'));
-registerServiceWorker();

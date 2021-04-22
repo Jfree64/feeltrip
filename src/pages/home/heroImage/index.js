@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import image from 'images/ft-hero-50.jpg'
+
 const HeroImage = (props) => (
           <section className="hero has-background-black headerImg">
             <img src={props.img} className="hero-image" alt=""/>

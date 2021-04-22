@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 
 const SubscribeForm = ({ status, message, onValidated }) => {
